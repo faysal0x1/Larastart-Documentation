@@ -1,5 +1,5 @@
 import comp from "C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/about.html.vue"
-const data = JSON.parse("{\"path\":\"/about.html\",\"title\":\"About\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"About\"},\"headers\":[{\"level\":2,\"title\":\"Goals\",\"slug\":\"goals\",\"link\":\"#goals\",\"children\":[]},{\"level\":2,\"title\":\"Project\",\"slug\":\"project\",\"link\":\"#project\",\"children\":[]}],\"git\":{},\"filePathRelative\":\"about.md\"}")
+const data = JSON.parse("{\"path\":\"/about.html\",\"title\":\"About\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"About\"},\"readingTime\":{\"minutes\":0.17,\"words\":52},\"filePathRelative\":\"about.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
