@@ -13,7 +13,23 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
 
-    navbar: ['/', '/get-started'],
+    navbar: [
+      '/',
+      { text: 'Getting Started', link: '/get-started' },
+      { text: 'About', link: '/about' },
+      { text: 'Contact', link: '/contact' },
+      { text: 'Contribute', link: '/contribute' },
+    ],
+
+    sidebar: {
+      '/': [
+        '/',
+        '/get-started',
+        '/about',
+        '/contact',
+        '/contribute',
+      ],
+    },
   }),
 
   bundler: viteBundler(),
