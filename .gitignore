@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+
+# Build output
+.vuepress/dist/
+
+# Temp files
+.vuepress/.temp/
+.vuepress/.cache/
+
+# Editor/IDE files
+.idea/
+.vscode/
+*.swp
+*.bak
+*.swo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*.local
