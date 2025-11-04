@@ -7,6 +7,8 @@ export default defineUserConfig({
 
   title: 'VuePress',
   description: 'My first VuePress Site',
+  // Important for GitHub Pages project sites: ensures assets are served from /<REPO_NAME>/
+  base: '/Larastart-Documentation/',
 
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
