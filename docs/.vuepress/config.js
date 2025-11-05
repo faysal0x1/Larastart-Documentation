@@ -13,39 +13,42 @@ export default defineUserConfig({
 
   theme: hopeTheme({
     logo: 'https://raw.githubusercontent.com/github/explore/main/topics/laravel/laravel.png',
+    iconAssets: 'iconify',
     sidebarDepth: 0,
     toc: true,
     navbar: [
-      '/',
-      { text: 'Get Started', link: '/get-started' },
-      { text: 'About', link: '/about' },
+      { text: 'Home', link: '/', icon: 'mdi:home' },
+      { text: 'Get Started', link: '/get-started', icon: 'mdi:rocket-launch' },
+      { text: 'About', link: '/about', icon: 'mdi:information-outline' },
       {
         text: 'Components',
+        icon: 'mdi:widgets',
         children: [
-          { text: 'Actions Dropdown', link: '/actions-dropdown' },
-          { text: 'Can Component', link: '/can-component-docs' },
+          { text: 'Actions Dropdown', link: '/actions-dropdown', icon: 'mdi:chevron-down-box' },
+          { text: 'Can Component', link: '/can-component-docs', icon: 'mdi:shield-check' },
         ],
       },
-      { text: 'Contact', link: '/contact' },
-      { text: 'Contribute', link: '/contribute' },
-      { text: 'GitHub', link: 'https://github.com/faysal0x1/larastart' },
+      { text: 'Contact', link: '/contact', icon: 'mdi:email' },
+      { text: 'Contribute', link: '/contribute', icon: 'mdi:account-heart-outline' },
+      { text: 'GitHub', link: 'https://github.com/faysal0x1/larastart', icon: 'mdi:github' },
     ],
 
     sidebar: {
       '/': [
-        '/',
-        '/get-started',
-        '/about',
+        { text: 'Home', link: '/', icon: 'mdi:home' },
+        { text: 'Get Started', link: '/get-started', icon: 'mdi:rocket-launch' },
+        { text: 'About', link: '/about', icon: 'mdi:information-outline' },
         {
           text: 'Components',
           collapsible: true,
+          icon: 'mdi:widgets',
           children: [
-            '/actions-dropdown',
-            '/can-component-docs',
+            { text: 'Actions Dropdown', link: '/actions-dropdown', icon: 'mdi:chevron-down-box' },
+            { text: 'Can Component', link: '/can-component-docs', icon: 'mdi:shield-check' },
           ],
         },
-        '/contact',
-        '/contribute',
+        { text: 'Contact', link: '/contact', icon: 'mdi:email' },
+        { text: 'Contribute', link: '/contribute', icon: 'mdi:account-heart-outline' },
       ],
     },
   }),
