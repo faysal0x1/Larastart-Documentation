@@ -1,5 +1,5 @@
-import comp from "C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/404.html.vue"
-const data = JSON.parse("{\"path\":\"/404.html\",\"title\":\"\",\"lang\":\"en-US\",\"frontmatter\":{\"layout\":\"NotFound\"},\"readingTime\":{\"minutes\":0.01,\"words\":3},\"filePathRelative\":null}")
+import comp from "C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/ActionsDropdown.html.vue"
+const data = JSON.parse("{\"path\":\"/ActionsDropdown.html\",\"title\":\"ActionsDropdown\",\"lang\":\"en-US\",\"frontmatter\":{},\"git\":{},\"filePathRelative\":\"ActionsDropdown.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

@@ -2,9 +2,12 @@ export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
   ["/about.html", { loader: () => import(/* webpackChunkName: "about.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/about.html.js"), meta: {"title":"About"} }],
+  ["/actions-dropdown.html", { loader: () => import(/* webpackChunkName: "actions-dropdown.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/actions-dropdown.html.js"), meta: {"title":"ActionsDropdown"} }],
+  ["/can-component-docs.html", { loader: () => import(/* webpackChunkName: "can-component-docs.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/can-component-docs.html.js"), meta: {"title":"Can"} }],
   ["/contact.html", { loader: () => import(/* webpackChunkName: "contact.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/contact.html.js"), meta: {"title":"Contact"} }],
   ["/contribute.html", { loader: () => import(/* webpackChunkName: "contribute.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/contribute.html.js"), meta: {"title":"How to Contribute"} }],
   ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Get Started"} }],
+  ["/laravel-helpers-docs.html", { loader: () => import(/* webpackChunkName: "laravel-helpers-docs.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/laravel-helpers-docs.html.js"), meta: {"title":"Laravel Helper Functions"} }],
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Home"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);

@@ -1,5 +1,5 @@
 import comp from "C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/contact.html.vue"
-const data = JSON.parse("{\"path\":\"/contact.html\",\"title\":\"Contact\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Contact\"},\"git\":{\"updatedTime\":1762250141000,\"contributors\":[{\"name\":\"faysal0x1\",\"username\":\"faysal0x1\",\"email\":\"faysal35-3119@diu.edu.bd\",\"commits\":1,\"url\":\"https://github.com/faysal0x1\"}],\"changelog\":[{\"hash\":\"764b19b88ed9a3df95f7b373232ebceccf9b4980\",\"time\":1762250141000,\"email\":\"faysal35-3119@diu.edu.bd\",\"author\":\"faysal0x1\",\"message\":\"Add documentation pages: About, Contact, and How to Contribute\"}]},\"filePathRelative\":\"contact.md\"}")
+const data = JSON.parse("{\"path\":\"/contact.html\",\"title\":\"Contact\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Contact\"},\"readingTime\":{\"minutes\":0.16,\"words\":47},\"filePathRelative\":\"contact.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

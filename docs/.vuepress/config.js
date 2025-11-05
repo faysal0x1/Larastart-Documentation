@@ -1,24 +1,31 @@
-import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
+import { defaultTheme } from '@vuepress/theme-default'
+import { hopeTheme } from 'vuepress-theme-hope'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { searchPlugin } from '@vuepress/plugin-search'
-import { defaultTheme } from '@vuepress/theme-default'
+import { tocPlugin } from '@vuepress/plugin-toc'
 
 export default defineUserConfig({
   lang: 'en-US',
-
   title: 'VuePress',
   description: 'My first VuePress Site',
-  // Important for GitHub Pages project sites: ensures assets are served from /<REPO_NAME>/
   base: '/Larastart-Documentation/',
 
-  theme: defaultTheme({
+  theme: hopeTheme({
     logo: 'https://vuejs.press/images/hero.png',
-
+    sidebarDepth: 0,
+    toc: true,
     navbar: [
       '/',
       { text: 'Getting Started', link: '/get-started' },
       { text: 'About', link: '/about' },
+      {
+        text: 'Components',
+        children: [
+          { text: 'Actions Dropdown', link: '/actions-dropdown' },
+          { text: 'Can Component', link: '/can-component-docs' },
+        ],
+      },
       { text: 'Contact', link: '/contact' },
       { text: 'Contribute', link: '/contribute' },
     ],
@@ -28,6 +35,14 @@ export default defineUserConfig({
         '/',
         '/get-started',
         '/about',
+        {
+          text: 'Components',
+          collapsible: true,
+          children: [
+            '/actions-dropdown',
+            '/can-component-docs',
+          ],
+        },
         '/contact',
         '/contribute',
       ],
@@ -43,6 +58,7 @@ export default defineUserConfig({
         },
       },
     }),
+    tocPlugin(),
   ],
 
   bundler: viteBundler(),
