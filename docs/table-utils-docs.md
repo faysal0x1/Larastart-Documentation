@@ -1,9 +1,5 @@
 # Table Utilities (tableUtils.jsx)
 
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
-
 A comprehensive set of reusable helpers and small components to build powerful, consistent data tables: sortable headers, formatted cells, action menus, status badges, links, toggles with confirmation, selects with optimistic updates, images, and more.
 
 ## Features

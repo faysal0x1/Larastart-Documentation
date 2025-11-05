@@ -1,7 +1,4 @@
 <template><div><h1 id="listingpage" tabindex="-1"><a class="header-anchor" href="#listingpage"><span>ListingPage</span></a></h1>
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
 <p>A high-level page component to render resource listings with DataTable, integrated searching, sorting, pagination sync with Inertia, header actions, bulk actions, custom filters, and optional tabs.</p>
 <h2 id="features" tabindex="-1"><a class="header-anchor" href="#features"><span>Features</span></a></h2>
 <ul>

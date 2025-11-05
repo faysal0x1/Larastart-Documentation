@@ -1,7 +1,4 @@
 <template><div><h1 id="table-utilities-tableutils-jsx" tabindex="-1"><a class="header-anchor" href="#table-utilities-tableutils-jsx"><span>Table Utilities (tableUtils.jsx)</span></a></h1>
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
 <p>A comprehensive set of reusable helpers and small components to build powerful, consistent data tables: sortable headers, formatted cells, action menus, status badges, links, toggles with confirmation, selects with optimistic updates, images, and more.</p>
 <h2 id="features" tabindex="-1"><a class="header-anchor" href="#features"><span>Features</span></a></h2>
 <ul>

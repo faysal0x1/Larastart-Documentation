@@ -1,7 +1,4 @@
 <template><div><h1 id="datatable" tabindex="-1"><a class="header-anchor" href="#datatable"><span>DataTable</span></a></h1>
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
 <p>A flexible table component built on TanStack Table with optional server-side mode. Supports search, sorting, pagination, column visibility toggling, export dropdown, custom filters, and tabs region.</p>
 <h2 id="features" tabindex="-1"><a class="header-anchor" href="#features"><span>Features</span></a></h2>
 <ul>

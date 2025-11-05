@@ -1,9 +1,5 @@
 # ListingPage
 
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
-
 A high-level page component to render resource listings with DataTable, integrated searching, sorting, pagination sync with Inertia, header actions, bulk actions, custom filters, and optional tabs.
 
 ## Features

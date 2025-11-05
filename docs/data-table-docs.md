@@ -1,9 +1,5 @@
 # DataTable
 
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
-
 A flexible table component built on TanStack Table with optional server-side mode. Supports search, sorting, pagination, column visibility toggling, export dropdown, custom filters, and tabs region.
 
 ## Features

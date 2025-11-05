@@ -1,9 +1,5 @@
 # ActionsDropdown
 
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
-
 A flexible and feature-rich dropdown menu component for displaying contextual actions with support for permissions, confirmation dialogs, and multiple action types.
 
 ## Features

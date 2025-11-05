@@ -1,9 +1,5 @@
 # GlobalForm
 
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
-
 A powerful, configurable form builder component for Inertia.js apps. It supports rich field types, client UX features (image previews, searchable selects), validation feedback, flexible layouts (default, grid, sections), and easy create/edit submissions.
 
 ## Features

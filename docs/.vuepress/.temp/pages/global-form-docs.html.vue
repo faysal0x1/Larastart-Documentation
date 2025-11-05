@@ -1,7 +1,4 @@
 <template><div><h1 id="globalform" tabindex="-1"><a class="header-anchor" href="#globalform"><span>GlobalForm</span></a></h1>
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
 <p>A powerful, configurable form builder component for Inertia.js apps. It supports rich field types, client UX features (image previews, searchable selects), validation feedback, flexible layouts (default, grid, sections), and easy create/edit submissions.</p>
 <h2 id="features" tabindex="-1"><a class="header-anchor" href="#features"><span>Features</span></a></h2>
 <ul>

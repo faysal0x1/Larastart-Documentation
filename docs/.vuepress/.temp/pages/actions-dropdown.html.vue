@@ -1,7 +1,4 @@
 <template><div><h1 id="actionsdropdown" tabindex="-1"><a class="header-anchor" href="#actionsdropdown"><span>ActionsDropdown</span></a></h1>
-<aside class="right-toc">
-  <Toc :include-level="[2,3]" />
-</aside>
 <p>A flexible and feature-rich dropdown menu component for displaying contextual actions with support for permissions, confirmation dialogs, and multiple action types.</p>
 <h2 id="features" tabindex="-1"><a class="header-anchor" href="#features"><span>Features</span></a></h2>
 <ul>
