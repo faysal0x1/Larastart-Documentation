@@ -4,16 +4,23 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "Goals",
-        "slug": "goals",
-        "link": "#goals",
+        "title": "Highlights",
+        "slug": "highlights",
+        "link": "#highlights",
         "children": []
       },
       {
         "level": 2,
-        "title": "Project",
-        "slug": "project",
-        "link": "#project",
+        "title": "Links",
+        "slug": "links",
+        "link": "#links",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Goals",
+        "slug": "goals",
+        "link": "#goals",
         "children": []
       }
     ],
@@ -502,6 +509,13 @@ export const searchIndex = [
         "slug": "reporting-issues",
         "link": "#reporting-issues",
         "children": []
+      },
+      {
+        "level": 2,
+        "title": "Security",
+        "slug": "security",
+        "link": "#security",
+        "children": []
       }
     ],
     "path": "/contact.html",
@@ -542,30 +556,58 @@ export const searchIndex = [
     "headers": [
       {
         "level": 2,
-        "title": "Pages",
-        "slug": "pages",
-        "link": "#pages",
+        "title": "Requirements",
+        "slug": "requirements",
+        "link": "#requirements",
         "children": []
       },
       {
         "level": 2,
-        "title": "Content",
-        "slug": "content",
-        "link": "#content",
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
         "children": []
       },
       {
         "level": 2,
-        "title": "Configuration",
-        "slug": "configuration",
-        "link": "#configuration",
+        "title": "Project Structure (high level)",
+        "slug": "project-structure-high-level",
+        "link": "#project-structure-high-level",
         "children": []
       },
       {
         "level": 2,
-        "title": "Layouts and customization",
-        "slug": "layouts-and-customization",
-        "link": "#layouts-and-customization",
+        "title": "Repository Pattern",
+        "slug": "repository-pattern",
+        "link": "#repository-pattern",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "JSX Components",
+        "slug": "jsx-components",
+        "link": "#jsx-components",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Scripts",
+        "slug": "scripts",
+        "link": "#scripts",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Next Steps",
+        "slug": "next-steps",
+        "link": "#next-steps",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Links",
+        "slug": "links",
+        "link": "#links",
         "children": []
       }
     ],

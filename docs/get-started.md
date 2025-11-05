@@ -1,46 +1,154 @@
 # Get Started
 
-This is a normal page, which contains VuePress basics.
+This guide helps you install and run Larastart, then shows how to use the repository pattern and JSX components.
 
-## Pages
+## Requirements
 
-You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.
+- PHP 8.2+
+- Composer
+- Node.js 18+ (or latest LTS)
+- npm / pnpm / bun (choose one)
+- MySQL or SQLite (or your preferred database)
 
-See [routing][] for more details.
+## Installation
 
-## Content
+1) Clone the repository:
 
-Every markdown file [will be rendered to HTML, then converted to a Vue SFC][content].
+```bash
+git clone https://github.com/faysal0x1/larastart.git
+cd larastart
+```
 
-VuePress support basic markdown syntax and [some extensions][synatex-extensions], you can also [use Vue features][vue-feature] in it.
+2) Install backend dependencies and set up environment:
 
-## Configuration
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+```
 
-VuePress use a `.vuepress/config.js`(or .ts) file as [site configuration][config], you can use it to config your site.
+3) Configure database in `.env`, then run migrations (and optionally seed):
 
-For [client side configuration][client-config], you can create `.vuepress/client.js`(or .ts).
+```bash
+php artisan migrate
+# php artisan db:seed
+```
 
-Meanwhile, you can also add configuration per page with [frontmatter][].
+4) Install frontend dependencies and start the dev server:
 
-## Layouts and customization
+```bash
+npm install
+npm run dev
+# or: pnpm install && pnpm dev
+# or: bun install && bun run dev
+```
 
-Here are common configuration controlling layout of `@vuepress/theme-default`:
+5) Serve the application (if not using Laragon/Valet):
 
-- [navbar][]
-- [sidebar][]
+```bash
+php artisan serve
+```
 
-Check [default theme docs][default-theme] for full reference.
+## Project Structure (high level)
 
-You can [add extra style][style] with `.vuepress/styles/index.scss` file.
+- `app/` domain logic, including repositories and services
+- `resources/` views/assets; JSX components live under `components/ui/`
+- `routes/` API and web routes
+- `database/` migrations and seeders
 
-[routing]: https://vuejs.press/guide/page.html#routing
-[content]: https://vuejs.press/guide/page.html#content
-[synatex-extensions]: https://vuejs.press/guide/markdown.html#syntax-extensions
-[vue-feature]: https://vuejs.press/guide/markdown.html#using-vue-in-markdown
-[config]: https://vuejs.press/guide/configuration.html#client-config-file
-[client-config]: https://vuejs.press/guide/configuration.html#client-config-file
-[frontmatter]: https://vuejs.press/guide/page.html#frontmatter
-[navbar]: https://vuejs.press/reference/default-theme/config.html#navbar
-[sidebar]: https://vuejs.press/reference/default-theme/config.html#sidebar
-[default-theme]: https://vuejs.press/reference/default-theme/
-[style]: https://vuejs.press/reference/default-theme/styles.html#style-file
+## Repository Pattern
+
+Larastart encourages clean separation between domain logic and data access using contracts and repository implementations.
+
+Example contract and implementation:
+
+```php
+// app/Repositories/Contracts/UserRepository.php
+namespace App\Repositories\Contracts;
+
+interface UserRepository
+{
+    public function findById(int $id): ?\App\Models\User;
+    public function create(array $attributes): \App\Models\User;
+}
+```
+
+```php
+// app/Repositories/EloquentUserRepository.php
+namespace App\Repositories;
+
+use App\Models\User;
+use App\Repositories\Contracts\UserRepository;
+
+class EloquentUserRepository implements UserRepository
+{
+    public function findById(int $id): ?User
+    {
+        return User::find($id);
+    }
+
+    public function create(array $attributes): User
+    {
+        return User::create($attributes);
+    }
+}
+```
+
+Bind the contract to the implementation in a service provider:
+
+```php
+// app/Providers/AppServiceProvider.php
+use App\Repositories\Contracts\UserRepository as UserRepositoryContract;
+use App\Repositories\EloquentUserRepository;
+
+public function register(): void
+{
+    $this->app->bind(UserRepositoryContract::class, EloquentUserRepository::class);
+}
+```
+
+Now inject the contract anywhere:
+
+```php
+public function __construct(private \App\Repositories\Contracts\UserRepository $users) {}
+```
+
+## JSX Components
+
+Larastart includes custom JSX components to speed up UI development. Components live under `components/ui/` and are bundled by Vite.
+
+Example usage (simplified):
+
+```jsx
+// components/ui/Button.jsx
+export function Button({ variant = 'primary', children, ...props }) {
+  const classes = variant === 'primary' ? 'btn btn-primary' : 'btn';
+  return <button className={classes} {...props}>{children}</button>;
+}
+```
+
+```jsx
+// Example import inside your app entry
+import { Button } from '@/components/ui/Button';
+
+export default function Example() {
+  return <Button>Save</Button>;
+}
+``;
+```
+
+## Scripts
+
+- `npm run dev`: start Vite in development
+- `npm run build`: production build
+- `php artisan test`: run backend tests
+
+## Next Steps
+
+- Explore the repository interfaces in `app/Repositories`
+- Browse UI components in `components/ui`
+- Add your first domain service and wire it via a contract
+
+## Links
+
+- GitHub: `https://github.com/faysal0x1/larastart`

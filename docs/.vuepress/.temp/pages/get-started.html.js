@@ -1,5 +1,5 @@
 import comp from "C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/get-started.html.vue"
-const data = JSON.parse("{\"path\":\"/get-started.html\",\"title\":\"Get Started\",\"lang\":\"en-US\",\"frontmatter\":{},\"readingTime\":{\"minutes\":0.7,\"words\":211},\"filePathRelative\":\"get-started.md\"}")
+const data = JSON.parse("{\"path\":\"/get-started.html\",\"title\":\"Get Started\",\"lang\":\"en-US\",\"frontmatter\":{},\"readingTime\":{\"minutes\":1.36,\"words\":409},\"filePathRelative\":\"get-started.md\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {

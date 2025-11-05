@@ -7,17 +7,17 @@ import { tocPlugin } from '@vuepress/plugin-toc'
 
 export default defineUserConfig({
   lang: 'en-US',
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: 'Larastart',
+  description: 'Larastart — Laravel starter kit with repository pattern and JSX components',
   base: '/Larastart-Documentation/',
 
   theme: hopeTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: 'https://raw.githubusercontent.com/github/explore/main/topics/laravel/laravel.png',
     sidebarDepth: 0,
     toc: true,
     navbar: [
       '/',
-      { text: 'Getting Started', link: '/get-started' },
+      { text: 'Get Started', link: '/get-started' },
       { text: 'About', link: '/about' },
       {
         text: 'Components',
@@ -28,6 +28,7 @@ export default defineUserConfig({
       },
       { text: 'Contact', link: '/contact' },
       { text: 'Contribute', link: '/contribute' },
+      { text: 'GitHub', link: 'https://github.com/faysal0x1/larastart' },
     ],
 
     sidebar: {

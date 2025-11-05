@@ -1,4 +1,5 @@
-<template><div><p>This is the content of home page. Check <a href="https://vuejs.press/reference/default-theme/frontmatter.html#home-page" target="_blank" rel="noopener noreferrer">Home Page Docs</a> for more details.</p>
+<template><div><p>Welcome to Larastart. Use the Get Started guide to install, configure, and build your first feature.</p>
+<p>footer: MIT Licensed | Copyright © 2025 Larastart</p>
 </div></template>
 
 

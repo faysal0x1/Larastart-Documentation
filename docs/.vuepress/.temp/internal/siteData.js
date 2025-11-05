@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/Larastart-Documentation/\",\"lang\":\"en-US\",\"title\":\"VuePress\",\"description\":\"My first VuePress Site\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/Larastart-Documentation/\",\"lang\":\"en-US\",\"title\":\"Larastart\",\"description\":\"Larastart — Laravel starter kit with repository pattern and JSX components\",\"head\":[],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
