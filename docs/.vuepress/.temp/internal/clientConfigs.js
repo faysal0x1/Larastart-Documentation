@@ -14,9 +14,9 @@ import * as clientConfig12 from 'C:/laragon/www/Larastart-Documentation/docs/.vu
 import * as clientConfig13 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
 import * as clientConfig14 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-catalog/lib/client/config.js'
 import * as clientConfig15 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
-import * as clientConfig16 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
-import * as clientConfig17 from 'C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/theme-hope/config.js'
-import * as clientConfig18 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-search/lib/client/config.js'
+import * as clientConfig16 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-search/lib/client/config.js'
+import * as clientConfig17 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
+import * as clientConfig18 from 'C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/theme-hope/config.js'
 import * as clientConfig19 from 'C:/laragon/www/Larastart-Documentation/node_modules/@vuepress/plugin-toc/lib/client/config.js'
 
 export const clientConfigs = [

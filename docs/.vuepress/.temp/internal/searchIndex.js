@@ -552,6 +552,112 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "DataTable",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Quick Start (Client-side mode)",
+        "slug": "quick-start-client-side-mode",
+        "link": "#quick-start-client-side-mode",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Server-side Mode",
+        "slug": "server-side-mode",
+        "link": "#server-side-mode",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Props",
+        "slug": "props",
+        "link": "#props",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Column Visibility Menu",
+        "slug": "column-visibility-menu",
+        "link": "#column-visibility-menu",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Sorting",
+        "slug": "sorting",
+        "link": "#sorting",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Search",
+        "slug": "search",
+        "link": "#search",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Pagination",
+        "slug": "pagination",
+        "link": "#pagination",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Custom Filters and Tabs",
+        "slug": "custom-filters-and-tabs",
+        "link": "#custom-filters-and-tabs",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Example with tableUtils Columns",
+        "slug": "example-with-tableutils-columns",
+        "link": "#example-with-tableutils-columns",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Styling Notes",
+        "slug": "styling-notes",
+        "link": "#styling-notes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Browser Support",
+        "slug": "browser-support",
+        "link": "#browser-support",
+        "children": []
+      }
+    ],
+    "path": "/data-table-docs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "DataTable Extra Buttons",
     "headers": [
       {
@@ -1014,6 +1120,213 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "GlobalForm",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Basic Usage",
+        "slug": "basic-usage",
+        "link": "#basic-usage",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Props",
+        "slug": "props",
+        "link": "#props",
+        "children": [
+          {
+            "level": 3,
+            "title": "Field shape",
+            "slug": "field-shape",
+            "link": "#field-shape",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Field Types and Examples",
+        "slug": "field-types-and-examples",
+        "link": "#field-types-and-examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "Text-like inputs",
+            "slug": "text-like-inputs",
+            "link": "#text-like-inputs",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Textarea",
+            "slug": "textarea",
+            "link": "#textarea",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Rich Text (Quill)",
+            "slug": "rich-text-quill",
+            "link": "#rich-text-quill",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Select (simple)",
+            "slug": "select-simple",
+            "link": "#select-simple",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Select (searchable combobox)",
+            "slug": "select-searchable-combobox",
+            "link": "#select-searchable-combobox",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Multiselect (chips + searchable)",
+            "slug": "multiselect-chips-searchable",
+            "link": "#multiselect-chips-searchable",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Switch / Checkbox",
+            "slug": "switch-checkbox",
+            "link": "#switch-checkbox",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Radio Group",
+            "slug": "radio-group",
+            "link": "#radio-group",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Date Picker",
+            "slug": "date-picker",
+            "link": "#date-picker",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Image Upload with Preview",
+            "slug": "image-upload-with-preview",
+            "link": "#image-upload-with-preview",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Icon Picker",
+            "slug": "icon-picker",
+            "link": "#icon-picker",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Layouts",
+        "slug": "layouts",
+        "link": "#layouts",
+        "children": [
+          {
+            "level": 3,
+            "title": "Default (stack)",
+            "slug": "default-stack",
+            "link": "#default-stack",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Grid (1–4 columns responsive)",
+            "slug": "grid-1–4-columns-responsive",
+            "link": "#grid-1–4-columns-responsive",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Sections (custom)",
+            "slug": "sections-custom",
+            "link": "#sections-custom",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Create vs Edit",
+        "slug": "create-vs-edit",
+        "link": "#create-vs-edit",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Validation and Errors",
+        "slug": "validation-and-errors",
+        "link": "#validation-and-errors",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Submission Handling",
+        "slug": "submission-handling",
+        "link": "#submission-handling",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Comprehensive Example",
+        "slug": "comprehensive-example",
+        "link": "#comprehensive-example",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Use Cases",
+        "slug": "use-cases",
+        "link": "#use-cases",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Browser Support",
+        "slug": "browser-support",
+        "link": "#browser-support",
+        "children": []
+      }
+    ],
+    "path": "/global-form-docs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Laravel Helper Functions",
     "headers": [
       {
@@ -1198,6 +1511,98 @@ export const searchIndex = [
       }
     ],
     "path": "/laravel-helpers-docs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "ListingPage",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Basic Usage",
+        "slug": "basic-usage",
+        "link": "#basic-usage",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Props",
+        "slug": "props",
+        "link": "#props",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Filtering, Sorting, Pagination",
+        "slug": "filtering-sorting-pagination",
+        "link": "#filtering-sorting-pagination",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Header Actions and Permissions",
+        "slug": "header-actions-and-permissions",
+        "link": "#header-actions-and-permissions",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Extra Buttons (Export/Delete Selected)",
+        "slug": "extra-buttons-export-delete-selected",
+        "link": "#extra-buttons-export-delete-selected",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Custom Filters and Tabs",
+        "slug": "custom-filters-and-tabs",
+        "link": "#custom-filters-and-tabs",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Columns Example with tableUtils",
+        "slug": "columns-example-with-tableutils",
+        "link": "#columns-example-with-tableutils",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "End-to-End Example",
+        "slug": "end-to-end-example",
+        "link": "#end-to-end-example",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Use Cases",
+        "slug": "use-cases",
+        "link": "#use-cases",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Browser Support",
+        "slug": "browser-support",
+        "link": "#browser-support",
+        "children": []
+      }
+    ],
+    "path": "/listing-page-docs.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -1845,213 +2250,6 @@ export const searchIndex = [
     "title": "",
     "headers": [],
     "path": "/404.html",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "GlobalForm",
-    "headers": [
-      {
-        "level": 2,
-        "title": "Features",
-        "slug": "features",
-        "link": "#features",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Installation",
-        "slug": "installation",
-        "link": "#installation",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Basic Usage",
-        "slug": "basic-usage",
-        "link": "#basic-usage",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Props",
-        "slug": "props",
-        "link": "#props",
-        "children": [
-          {
-            "level": 3,
-            "title": "Field shape",
-            "slug": "field-shape",
-            "link": "#field-shape",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "Field Types and Examples",
-        "slug": "field-types-and-examples",
-        "link": "#field-types-and-examples",
-        "children": [
-          {
-            "level": 3,
-            "title": "Text-like inputs",
-            "slug": "text-like-inputs",
-            "link": "#text-like-inputs",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Textarea",
-            "slug": "textarea",
-            "link": "#textarea",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Rich Text (Quill)",
-            "slug": "rich-text-quill",
-            "link": "#rich-text-quill",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Select (simple)",
-            "slug": "select-simple",
-            "link": "#select-simple",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Select (searchable combobox)",
-            "slug": "select-searchable-combobox",
-            "link": "#select-searchable-combobox",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Multiselect (chips + searchable)",
-            "slug": "multiselect-chips-searchable",
-            "link": "#multiselect-chips-searchable",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Switch / Checkbox",
-            "slug": "switch-checkbox",
-            "link": "#switch-checkbox",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Radio Group",
-            "slug": "radio-group",
-            "link": "#radio-group",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Date Picker",
-            "slug": "date-picker",
-            "link": "#date-picker",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Image Upload with Preview",
-            "slug": "image-upload-with-preview",
-            "link": "#image-upload-with-preview",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Icon Picker",
-            "slug": "icon-picker",
-            "link": "#icon-picker",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "Layouts",
-        "slug": "layouts",
-        "link": "#layouts",
-        "children": [
-          {
-            "level": 3,
-            "title": "Default (stack)",
-            "slug": "default-stack",
-            "link": "#default-stack",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Grid (1–4 columns responsive)",
-            "slug": "grid-1–4-columns-responsive",
-            "link": "#grid-1–4-columns-responsive",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "Sections (custom)",
-            "slug": "sections-custom",
-            "link": "#sections-custom",
-            "children": []
-          }
-        ]
-      },
-      {
-        "level": 2,
-        "title": "Create vs Edit",
-        "slug": "create-vs-edit",
-        "link": "#create-vs-edit",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Validation and Errors",
-        "slug": "validation-and-errors",
-        "link": "#validation-and-errors",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Submission Handling",
-        "slug": "submission-handling",
-        "link": "#submission-handling",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Comprehensive Example",
-        "slug": "comprehensive-example",
-        "link": "#comprehensive-example",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Use Cases",
-        "slug": "use-cases",
-        "link": "#use-cases",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Dependencies",
-        "slug": "dependencies",
-        "link": "#dependencies",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Browser Support",
-        "slug": "browser-support",
-        "link": "#browser-support",
-        "children": []
-      }
-    ],
-    "path": "/global-form-docs.html",
     "pathLocale": "/",
     "extraFields": []
   }

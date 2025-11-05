@@ -1,8 +1,6 @@
 import { defineUserConfig } from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
-import { hopeTheme } from 'vuepress-theme-hope'
 import { viteBundler } from '@vuepress/bundler-vite'
-import { searchPlugin } from '@vuepress/plugin-search'
+import { hopeTheme } from 'vuepress-theme-hope'
 import { tocPlugin } from '@vuepress/plugin-toc'
 
 export default defineUserConfig({
@@ -13,9 +11,25 @@ export default defineUserConfig({
 
   theme: hopeTheme({
     logo: 'https://raw.githubusercontent.com/github/explore/main/topics/laravel/laravel.png',
-    iconAssets: 'iconify',
+
+    plugins: {
+      icon: {
+        assets: 'iconify',
+      },
+
+      search: {
+        maxSuggestions: 10,
+        locales: {
+          '/': {
+            placeholder: 'Search docs',
+          },
+        },
+      },
+    },
+
     sidebarDepth: 0,
     toc: true,
+
     navbar: [
       { text: 'Home', link: '/', icon: 'mdi:home' },
       { text: 'Get Started', link: '/get-started', icon: 'mdi:rocket-launch' },
@@ -35,70 +49,41 @@ export default defineUserConfig({
 
     sidebar: {
       '/': [
-        { text: 'Home', link: '/', icon: 'mdi:home' },
-        { text: 'Get Started', link: '/get-started', icon: 'mdi:rocket-launch' },
-        { text: 'About', link: '/about', icon: 'mdi:information-outline' },
+        { text: 'Home', link: '/', icon: 'mdi:home-outline' },
+        { text: 'Get Started', link: '/get-started', icon: 'mdi:rocket-launch-outline' },
+
         {
           text: 'Components',
           collapsible: true,
-          icon: 'mdi:widgets',
+          icon: 'mdi:cube-outline',
           children: [
-            {
-              text: 'Actions Dropdown',
-              link: '/actions-dropdown',
-              icon: 'mdi:chevron-down-box'
-            },
-            {
-              text: 'Can Component',
-              link: '/can-component-docs',
-              icon: 'mdi:shield-check'
-            },
-            {
-              text: 'Utility Helper',
-              link: '/utility-helpers-docs',
-              icon: 'mdi:shield-check'
-            },
+            { text: 'Actions Dropdown', link: '/actions-dropdown', icon: 'mdi:menu-swap-outline' },
+            { text: 'Can Component', link: '/can-component-docs', icon: 'mdi:shield-check-outline' },
+            { text: 'Utility Helper', link: '/utility-helpers-docs', icon: 'mdi:tools' },
           ],
         },
+
         {
           text: 'Data Tables',
           collapsible: true,
-          icon: 'mdi:widgets',
+          icon: 'mdi:table-large',
           children: [
-            {
-              text: 'Datatable Buttons',
-              link: '/datatable-buttons-docs',
-              icon: 'mdi:chevron-down-box'
-            },
-            {
-              text: 'Table Utils',
-              link: '/table-utils-docs',
-              icon: 'mdi:chevron-down-box'
-            },
-
-            {
-              text: "Global Form",
-              link: '/global-form-docs',
-              icon: 'mdi:chevron-down-box'
-            }
-
+            { text: 'Data Tables', link: '/data-table-docs', icon: 'mdi:view-list-outline' },
+            { text: 'Datatable Buttons', link: '/datatable-buttons-docs', icon: 'mdi:table-arrow-down' },
+            { text: 'Table Utils', link: '/table-utils-docs', icon: 'mdi:table-cog' },
+            { text: 'Global Form', link: '/global-form-docs', icon: 'mdi:form-select' },
+            { text: 'Listing Page', link: '/listing-page-docs', icon: 'mdi:format-list-bulleted-square' },
           ],
         },
-        { text: 'Contact', link: '/contact', icon: 'mdi:email' },
-        { text: 'Contribute', link: '/contribute', icon: 'mdi:account-heart-outline' },
+
+        { text: 'About', link: '/about', icon: 'mdi:information-outline' },
+        { text: 'Contact', link: '/contact', icon: 'mdi:email-outline' },
+        { text: 'Contribute', link: '/contribute', icon: 'mdi:hand-heart-outline' },
       ],
     },
   }),
 
   plugins: [
-    searchPlugin({
-      maxSuggestions: 10,
-      locales: {
-        '/': {
-          placeholder: 'Search docs',
-        },
-      },
-    }),
     tocPlugin(),
   ],
 
