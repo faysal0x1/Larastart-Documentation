@@ -494,6 +494,134 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Cart Module",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Enabling",
+        "slug": "enabling",
+        "link": "#enabling",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Database Schema",
+        "slug": "database-schema",
+        "link": "#database-schema",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API Routes",
+        "slug": "api-routes",
+        "link": "#api-routes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Controller",
+        "slug": "controller",
+        "link": "#controller",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Service",
+        "slug": "service",
+        "link": "#service",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Models",
+        "slug": "models",
+        "link": "#models",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Middleware",
+        "slug": "middleware",
+        "link": "#middleware",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Facade",
+        "slug": "facade",
+        "link": "#facade",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Usage Examples",
+        "slug": "usage-examples",
+        "link": "#usage-examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "API: Add to Cart (Generic)",
+            "slug": "api-add-to-cart-generic",
+            "link": "#api-add-to-cart-generic",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Service: Add a Quiz Bundle",
+            "slug": "service-add-a-quiz-bundle",
+            "link": "#service-add-a-quiz-bundle",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Merge Guest Cart After Login",
+            "slug": "merge-guest-cart-after-login",
+            "link": "#merge-guest-cart-after-login",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Integration Notes",
+        "slug": "integration-notes",
+        "link": "#integration-notes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Testing Tips",
+        "slug": "testing-tips",
+        "link": "#testing-tips",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Security",
+        "slug": "security",
+        "link": "#security",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Roadmap",
+        "slug": "roadmap",
+        "link": "#roadmap",
+        "children": []
+      }
+    ],
+    "path": "/cart-module.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Contact",
     "headers": [
       {
@@ -1327,6 +1455,179 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Health Monitor Module",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Configuration",
+        "slug": "configuration",
+        "link": "#configuration",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Usage",
+        "slug": "usage",
+        "link": "#usage",
+        "children": [
+          {
+            "level": 3,
+            "title": "Basic Health Check",
+            "slug": "basic-health-check",
+            "link": "#basic-health-check",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Send Alerts",
+            "slug": "send-alerts",
+            "link": "#send-alerts",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Get Health Overview",
+            "slug": "get-health-overview",
+            "link": "#get-health-overview",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Get Metrics",
+            "slug": "get-metrics",
+            "link": "#get-metrics",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Commands",
+        "slug": "commands",
+        "link": "#commands",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API Endpoints",
+        "slug": "api-endpoints",
+        "link": "#api-endpoints",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Health Checks",
+        "slug": "health-checks",
+        "link": "#health-checks",
+        "children": [
+          {
+            "level": 3,
+            "title": "Basic Checks (every minute)",
+            "slug": "basic-checks-every-minute",
+            "link": "#basic-checks-every-minute",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Detailed Checks (every 5 minutes)",
+            "slug": "detailed-checks-every-5-minutes",
+            "link": "#detailed-checks-every-5-minutes",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Error Monitoring",
+        "slug": "error-monitoring",
+        "link": "#error-monitoring",
+        "children": [
+          {
+            "level": 3,
+            "title": "Monitored Error Codes",
+            "slug": "monitored-error-codes",
+            "link": "#monitored-error-codes",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Error Alert Features",
+            "slug": "error-alert-features",
+            "link": "#error-alert-features",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Alert Levels",
+        "slug": "alert-levels",
+        "link": "#alert-levels",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Configuration Options",
+        "slug": "configuration-options",
+        "link": "#configuration-options",
+        "children": [
+          {
+            "level": 3,
+            "title": "Thresholds",
+            "slug": "thresholds",
+            "link": "#thresholds",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Cooldown Periods",
+            "slug": "cooldown-periods",
+            "link": "#cooldown-periods",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Data Retention",
+            "slug": "data-retention",
+            "link": "#data-retention",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "License",
+        "slug": "license",
+        "link": "#license",
+        "children": []
+      }
+    ],
+    "path": "/health-monitor-module.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Laravel Helper Functions",
     "headers": [
       {
@@ -1603,6 +1904,183 @@ export const searchIndex = [
       }
     ],
     "path": "/listing-page-docs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [],
+    "path": "/module-file-structure.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Project File Structure: Pencilbox-Quiz",
+        "slug": "project-file-structure-pencilbox-quiz",
+        "link": "#project-file-structure-pencilbox-quiz",
+        "children": []
+      }
+    ],
+    "path": "/project-file-structure.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Pencilbox Quiz",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Key Features",
+        "slug": "key-features",
+        "link": "#key-features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Tech Stack",
+        "slug": "tech-stack",
+        "link": "#tech-stack",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Directory Highlights",
+        "slug": "directory-highlights",
+        "link": "#directory-highlights",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Requirements",
+        "slug": "requirements",
+        "link": "#requirements",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Environment Setup",
+        "slug": "environment-setup",
+        "link": "#environment-setup",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Running Locally",
+        "slug": "running-locally",
+        "link": "#running-locally",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Building Assets",
+        "slug": "building-assets",
+        "link": "#building-assets",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Database & Seeding",
+        "slug": "database-seeding",
+        "link": "#database-seeding",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Queues and Scheduling",
+        "slug": "queues-and-scheduling",
+        "link": "#queues-and-scheduling",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Caching & Performance",
+        "slug": "caching-performance",
+        "link": "#caching-performance",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Realtime/Broadcasting",
+        "slug": "realtime-broadcasting",
+        "link": "#realtime-broadcasting",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Routes Overview",
+        "slug": "routes-overview",
+        "link": "#routes-overview",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Module Management (Database)",
+        "slug": "module-management-database",
+        "link": "#module-management-database",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Bundles, Purchases, Orders, Revenue",
+        "slug": "bundles-purchases-orders-revenue",
+        "link": "#bundles-purchases-orders-revenue",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Security",
+        "slug": "security",
+        "link": "#security",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Testing & QA",
+        "slug": "testing-qa",
+        "link": "#testing-qa",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Deployment Checklist",
+        "slug": "deployment-checklist",
+        "link": "#deployment-checklist",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Useful Artisan Commands",
+        "slug": "useful-artisan-commands",
+        "link": "#useful-artisan-commands",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "References & Internal Docs",
+        "slug": "references-internal-docs",
+        "link": "#references-internal-docs",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "License",
+        "slug": "license",
+        "link": "#license",
+        "children": []
+      }
+    ],
+    "path": "/project-overview.html",
     "pathLocale": "/",
     "extraFields": []
   },
@@ -2250,6 +2728,92 @@ export const searchIndex = [
     "title": "",
     "headers": [],
     "path": "/404.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Coupon Module",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Enabling",
+        "slug": "enabling",
+        "link": "#enabling",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Database Schema",
+        "slug": "database-schema",
+        "link": "#database-schema",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Routes",
+        "slug": "routes",
+        "link": "#routes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Service & Facade",
+        "slug": "service-facade",
+        "link": "#service-facade",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Usage Examples",
+        "slug": "usage-examples",
+        "link": "#usage-examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "Apply Coupon via API",
+            "slug": "apply-coupon-via-api",
+            "link": "#apply-coupon-via-api",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Service: Apply in Checkout",
+            "slug": "service-apply-in-checkout",
+            "link": "#service-apply-in-checkout",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Integration Notes",
+        "slug": "integration-notes",
+        "link": "#integration-notes",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Testing Tips",
+        "slug": "testing-tips",
+        "link": "#testing-tips",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Security",
+        "slug": "security",
+        "link": "#security",
+        "children": []
+      }
+    ],
+    "path": "/coupon-module.html",
     "pathLocale": "/",
     "extraFields": []
   }

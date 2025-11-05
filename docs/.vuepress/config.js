@@ -51,7 +51,39 @@ export default defineUserConfig({
       '/': [
         { text: 'Home', link: '/', icon: 'mdi:home-outline' },
         { text: 'Get Started', link: '/get-started', icon: 'mdi:rocket-launch-outline' },
+        { text: 'Project Overview', link: '/project-overview', icon: 'mdi:rocket-launch-outline' },
+        {
+          text: "File Structure",
+          collapsible: true,
+          icon: 'mdi:folder-outline',
+          children: [
+            { text: 'Project File Structure', link: '/project-file-structure', icon: 'mdi:folder-outline' },
+            { text: "Module File Structure", link: "/module-file-structure", icon: "mdi:folder-outline" },
+          ],
+        },
+        {
+          text: "Modules",
+          collapsible: true,
+          icon: 'mdi:folder-outline',
+          children: [
+            {
+              text: 'Cart Module',
+              link: '/cart-module',
+              icon: 'mdi:cart-outline'
+            },
+            {
+              text: 'Health Monitor Module',
+              link: '/health-monitor-module',
+              icon: 'mdi:cart-outline'
+            },
+            {
+              text: "Coupon Module",
+              link: "/coupon-module",
+              icon: "mdi:cart-outline"
+            }
 
+          ],
+        },
         {
           text: 'Components',
           collapsible: true,
