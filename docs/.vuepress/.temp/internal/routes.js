@@ -10,9 +10,10 @@ export const routes = Object.fromEntries([
   ["/get-started.html", { loader: () => import(/* webpackChunkName: "get-started.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/get-started.html.js"), meta: {"title":"Get Started"} }],
   ["/laravel-helpers-docs.html", { loader: () => import(/* webpackChunkName: "laravel-helpers-docs.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/laravel-helpers-docs.html.js"), meta: {"title":"Laravel Helper Functions"} }],
   ["/", { loader: () => import(/* webpackChunkName: "index.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Home"} }],
+  ["/table-utils-docs.html", { loader: () => import(/* webpackChunkName: "table-utils-docs.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/table-utils-docs.html.js"), meta: {"title":"Table Utilities (tableUtils.jsx)"} }],
   ["/utility-helpers-docs.html", { loader: () => import(/* webpackChunkName: "utility-helpers-docs.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/utility-helpers-docs.html.js"), meta: {"title":"Utility Helper Functions"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
-  ["/table-utils-docs.html", { loader: () => import(/* webpackChunkName: "table-utils-docs.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/table-utils-docs.html.js"), meta: {"title":"Table Utilities (tableUtils.jsx)"} }],
+  ["/global-form-docs.html", { loader: () => import(/* webpackChunkName: "global-form-docs.html" */"C:/laragon/www/Larastart-Documentation/docs/.vuepress/.temp/pages/global-form-docs.html.js"), meta: {"title":"GlobalForm"} }],
 ]);
 
 if (import.meta.webpackHot) {

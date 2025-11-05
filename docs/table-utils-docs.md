@@ -418,6 +418,182 @@ createSelectColumn('status', 'Status', 'admin.model.update', {
 4. **Consistency first**: Build with `createColumn` then upgrade to specialized builders as needs evolve.
 5. **Optimistic UI**: Use `preserveScroll`/`preserveState` and callbacks to keep tables snappy.
 
+## Examples
+
+### 1) Basic Table: Serial, Link, Date, Status, Actions
+
+```jsx
+import { createSerialColumn, createDateColumn, createStatusColumn, createActionsColumn, linkColumnPresets } from '@/demo/tableUtils';
+import ActionsDropdown from '@/components/ActionsDropdown';
+
+const statusConfig = {
+  active: { color: 'green', label: 'Active' },
+  pending: { color: 'yellow', label: 'Pending' },
+  suspended: { color: 'red', label: 'Suspended' },
+};
+
+export const columns = [
+  createSerialColumn('#'),
+  linkColumnPresets.primary('name', 'Name', (user) => `/users/${user.id}`),
+  createDateColumn('created_at', 'Joined', 'MMM d, yyyy'),
+  createStatusColumn('status', 'Status', statusConfig),
+  createActionsColumn((row) => (
+    <ActionsDropdown
+      item={row.original}
+      actions={[
+        { type: 'view', label: 'View', route: (id) => `/users/${id}` },
+        { type: 'edit', label: 'Edit', route: (id) => `/users/${id}/edit` },
+        { type: 'delete', label: 'Delete', route: (id) => `/users/${id}`, method: 'delete' },
+      ]}
+    />
+  )),
+];
+```
+
+### 2) Permission-based Actions
+
+```jsx
+import { createPermissionActionsColumn } from '@/demo/tableUtils';
+import { Eye, Edit, Trash2 } from 'lucide-react';
+
+const actions = [
+  { key: 'view', label: 'View', icon: Eye, href: (u) => `/users/${u.id}` },
+  { key: 'edit', label: 'Edit', icon: Edit, href: (u) => `/users/${u.id}/edit`, permission: 'users.update' },
+  { key: 'delete', label: 'Delete', icon: Trash2, onClick: (u) => confirmDelete(u), permission: 'users.delete' },
+];
+
+export const columns = [
+  // ...other columns
+  createPermissionActionsColumn(actions, 'Actions'),
+];
+```
+
+### 3) Toggle Column with Inertia PATCH
+
+```jsx
+import { createToggleColumn } from '@/demo/tableUtils';
+
+export const columns = [
+  // ...
+  createToggleColumn('is_active', 'Active', 'admin.model.update', {
+    modelType: 'user',
+    confirmMessage: 'Are you sure to change active status?',
+    onToggleSuccess: () => {/* refetch or toast */},
+  }),
+];
+```
+
+### 4) Status as Enum Using createStatusToggleColumn
+
+```jsx
+import { createStatusToggleColumn } from '@/demo/tableUtils';
+
+export const columns = [
+  // maps true -> 1, false -> 0
+  createStatusToggleColumn('status', 'Status', 'admin.model.update', 1, 0, {
+    modelType: 'post',
+  }),
+];
+```
+
+### 5) Select Column with Confirmation
+
+```jsx
+import { createSelectColumn } from '@/demo/tableUtils';
+
+export const columns = [
+  createSelectColumn('status', 'Status', 'admin.model.update', {
+    modelType: 'ticket',
+    selectOptions: [
+      { value: 'open', label: 'Open' },
+      { value: 'in_progress', label: 'In Progress' },
+      { value: 'closed', label: 'Closed' },
+    ],
+    placeholder: 'Select status',
+  }),
+];
+```
+
+### 6) Image + Link + Tags
+
+```jsx
+import { createImageColumn, linkColumnPresets, createTagsColumn } from '@/demo/tableUtils';
+
+export const columns = [
+  createImageColumn('avatar_url', 'Avatar', {
+    width: 40,
+    height: 40,
+    className: 'ring-2 ring-gray-200',
+    defaultImage: '/images/avatar-fallback.png',
+    altTextFn: (u) => `${u.name}'s avatar`,
+  }),
+  linkColumnPresets.truncated('name', 'Name', (u) => `/users/${u.id}`, 'id', 24),
+  createTagsColumn('roles', 'Roles'),
+];
+```
+
+### 7) Description Modal Cell
+
+```jsx
+import { createDescriptionColumn } from '@/demo/tableUtils';
+
+export const columns = [
+  createDescriptionColumn('bio', 'Bio', 30),
+];
+```
+
+### 8) Boolean with Custom Renderer
+
+```jsx
+import { createBooleanColumn } from '@/demo/tableUtils';
+import { Badge } from '@/components/ui/badge';
+
+export const columns = [
+  createBooleanColumn('email_verified', 'Email Verified', (value) => (
+    <Badge variant="outline" className={value ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'}>
+      {value ? 'Verified' : 'Unverified'}
+    </Badge>
+  )),
+];
+```
+
+### 9) Link Column Presets with Icon and External
+
+```jsx
+import { linkColumnPresets } from '@/demo/tableUtils';
+import { ExternalLink } from 'lucide-react';
+
+export const columns = [
+  linkColumnPresets.withIcon('title', 'Title', (p) => `/posts/${p.id}`, 'id', (p) => <ExternalLink className="h-3 w-3" />),
+  linkColumnPresets.external('website', 'Website', (c) => c.website, 'id', { ariaLabel: (c) => `Open ${c.name} website` }),
+];
+```
+
+### 10) RowActions Layout Helper
+
+```jsx
+import RowActions from '@/demo/tableUtils';
+import { Button } from '@/components/ui/button';
+
+function CustomActionsCell({ row }) {
+  return (
+    <RowActions align="end" gap="sm">
+      <Button size="sm">Edit</Button>
+      <Button size="sm" variant="outline">Archive</Button>
+      <Button size="sm" variant="destructive">Delete</Button>
+    </RowActions>
+  );
+}
+```
+
+## Use Cases
+
+- **Admin user management**: Combine `createSerialColumn`, `linkColumnPresets.primary`, `createStatusColumn`, and `createPermissionActionsColumn` to manage users with role-based actions.
+- **Content moderation**: Use `createSelectColumn` for status transitions (draft/review/published) with confirmation, plus `createImageColumn` for thumbnails.
+- **Feature flags/settings**: `createToggleColumn` to flip boolean fields across many rows with minimal friction.
+- **Catalogs/inventories**: `linkColumn` for names, `createTagsColumn` for categories, `createBooleanColumn` for availability, `createDateColumn` for last updated.
+- **Support tickets**: `linkColumnPresets.truncated` for titles, `createSelectColumn` for state, `createStatusColumn` for severity, and action dropdowns for triage.
+
 ## Dependencies
 
 - `@inertiajs/react` – Links/routing and mutations

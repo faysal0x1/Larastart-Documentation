@@ -1209,6 +1209,275 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Table Utilities (tableUtils.jsx)",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Quick Start",
+        "slug": "quick-start",
+        "link": "#quick-start",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Exports Overview",
+        "slug": "exports-overview",
+        "link": "#exports-overview",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API Details and Examples",
+        "slug": "api-details-and-examples",
+        "link": "#api-details-and-examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "createColumn",
+            "slug": "createcolumn",
+            "link": "#createcolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createActionsColumn",
+            "slug": "createactionscolumn",
+            "link": "#createactionscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createDateColumn",
+            "slug": "createdatecolumn",
+            "link": "#createdatecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createStatusColumn",
+            "slug": "createstatuscolumn",
+            "link": "#createstatuscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createDescriptionColumn",
+            "slug": "createdescriptioncolumn",
+            "link": "#createdescriptioncolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createTagsColumn",
+            "slug": "createtagscolumn",
+            "link": "#createtagscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createBooleanColumn",
+            "slug": "createbooleancolumn",
+            "link": "#createbooleancolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "withOriginal",
+            "slug": "withoriginal",
+            "link": "#withoriginal",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "column (shorthand)",
+            "slug": "column-shorthand",
+            "link": "#column-shorthand",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "RowActions (layout helper)",
+            "slug": "rowactions-layout-helper",
+            "link": "#rowactions-layout-helper",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createSerialColumn",
+            "slug": "createserialcolumn",
+            "link": "#createserialcolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "linkColumn and linkColumnPresets",
+            "slug": "linkcolumn-and-linkcolumnpresets",
+            "link": "#linkcolumn-and-linkcolumnpresets",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createToggleColumn",
+            "slug": "createtogglecolumn",
+            "link": "#createtogglecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createStatusToggleColumn",
+            "slug": "createstatustogglecolumn",
+            "link": "#createstatustogglecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createPermissionActionsColumn",
+            "slug": "createpermissionactionscolumn",
+            "link": "#createpermissionactionscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createImageColumn",
+            "slug": "createimagecolumn",
+            "link": "#createimagecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createSelectColumn",
+            "slug": "createselectcolumn",
+            "link": "#createselectcolumn",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Patterns and Tips",
+        "slug": "patterns-and-tips",
+        "link": "#patterns-and-tips",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Examples",
+        "slug": "examples",
+        "link": "#examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "1) Basic Table: Serial, Link, Date, Status, Actions",
+            "slug": "_1-basic-table-serial-link-date-status-actions",
+            "link": "#_1-basic-table-serial-link-date-status-actions",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2) Permission-based Actions",
+            "slug": "_2-permission-based-actions",
+            "link": "#_2-permission-based-actions",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3) Toggle Column with Inertia PATCH",
+            "slug": "_3-toggle-column-with-inertia-patch",
+            "link": "#_3-toggle-column-with-inertia-patch",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4) Status as Enum Using createStatusToggleColumn",
+            "slug": "_4-status-as-enum-using-createstatustogglecolumn",
+            "link": "#_4-status-as-enum-using-createstatustogglecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5) Select Column with Confirmation",
+            "slug": "_5-select-column-with-confirmation",
+            "link": "#_5-select-column-with-confirmation",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "6) Image + Link + Tags",
+            "slug": "_6-image-link-tags",
+            "link": "#_6-image-link-tags",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "7) Description Modal Cell",
+            "slug": "_7-description-modal-cell",
+            "link": "#_7-description-modal-cell",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "8) Boolean with Custom Renderer",
+            "slug": "_8-boolean-with-custom-renderer",
+            "link": "#_8-boolean-with-custom-renderer",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "9) Link Column Presets with Icon and External",
+            "slug": "_9-link-column-presets-with-icon-and-external",
+            "link": "#_9-link-column-presets-with-icon-and-external",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "10) RowActions Layout Helper",
+            "slug": "_10-rowactions-layout-helper",
+            "link": "#_10-rowactions-layout-helper",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Use Cases",
+        "slug": "use-cases",
+        "link": "#use-cases",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Browser Support",
+        "slug": "browser-support",
+        "link": "#browser-support",
+        "children": []
+      }
+    ],
+    "path": "/table-utils-docs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Utility Helper Functions",
     "headers": [
       {
@@ -1580,7 +1849,7 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Table Utilities (tableUtils.jsx)",
+    "title": "GlobalForm",
     "headers": [
       {
         "level": 2,
@@ -1598,150 +1867,173 @@ export const searchIndex = [
       },
       {
         "level": 2,
-        "title": "Quick Start",
-        "slug": "quick-start",
-        "link": "#quick-start",
+        "title": "Basic Usage",
+        "slug": "basic-usage",
+        "link": "#basic-usage",
         "children": []
       },
       {
         "level": 2,
-        "title": "Exports Overview",
-        "slug": "exports-overview",
-        "link": "#exports-overview",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "API Details and Examples",
-        "slug": "api-details-and-examples",
-        "link": "#api-details-and-examples",
+        "title": "Props",
+        "slug": "props",
+        "link": "#props",
         "children": [
           {
             "level": 3,
-            "title": "createColumn",
-            "slug": "createcolumn",
-            "link": "#createcolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createActionsColumn",
-            "slug": "createactionscolumn",
-            "link": "#createactionscolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createDateColumn",
-            "slug": "createdatecolumn",
-            "link": "#createdatecolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createStatusColumn",
-            "slug": "createstatuscolumn",
-            "link": "#createstatuscolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createDescriptionColumn",
-            "slug": "createdescriptioncolumn",
-            "link": "#createdescriptioncolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createTagsColumn",
-            "slug": "createtagscolumn",
-            "link": "#createtagscolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createBooleanColumn",
-            "slug": "createbooleancolumn",
-            "link": "#createbooleancolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "withOriginal",
-            "slug": "withoriginal",
-            "link": "#withoriginal",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "column (shorthand)",
-            "slug": "column-shorthand",
-            "link": "#column-shorthand",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "RowActions (layout helper)",
-            "slug": "rowactions-layout-helper",
-            "link": "#rowactions-layout-helper",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createSerialColumn",
-            "slug": "createserialcolumn",
-            "link": "#createserialcolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "linkColumn and linkColumnPresets",
-            "slug": "linkcolumn-and-linkcolumnpresets",
-            "link": "#linkcolumn-and-linkcolumnpresets",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createToggleColumn",
-            "slug": "createtogglecolumn",
-            "link": "#createtogglecolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createStatusToggleColumn",
-            "slug": "createstatustogglecolumn",
-            "link": "#createstatustogglecolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createPermissionActionsColumn",
-            "slug": "createpermissionactionscolumn",
-            "link": "#createpermissionactionscolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createImageColumn",
-            "slug": "createimagecolumn",
-            "link": "#createimagecolumn",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "createSelectColumn",
-            "slug": "createselectcolumn",
-            "link": "#createselectcolumn",
+            "title": "Field shape",
+            "slug": "field-shape",
+            "link": "#field-shape",
             "children": []
           }
         ]
       },
       {
         "level": 2,
-        "title": "Patterns and Tips",
-        "slug": "patterns-and-tips",
-        "link": "#patterns-and-tips",
+        "title": "Field Types and Examples",
+        "slug": "field-types-and-examples",
+        "link": "#field-types-and-examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "Text-like inputs",
+            "slug": "text-like-inputs",
+            "link": "#text-like-inputs",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Textarea",
+            "slug": "textarea",
+            "link": "#textarea",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Rich Text (Quill)",
+            "slug": "rich-text-quill",
+            "link": "#rich-text-quill",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Select (simple)",
+            "slug": "select-simple",
+            "link": "#select-simple",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Select (searchable combobox)",
+            "slug": "select-searchable-combobox",
+            "link": "#select-searchable-combobox",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Multiselect (chips + searchable)",
+            "slug": "multiselect-chips-searchable",
+            "link": "#multiselect-chips-searchable",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Switch / Checkbox",
+            "slug": "switch-checkbox",
+            "link": "#switch-checkbox",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Radio Group",
+            "slug": "radio-group",
+            "link": "#radio-group",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Date Picker",
+            "slug": "date-picker",
+            "link": "#date-picker",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Image Upload with Preview",
+            "slug": "image-upload-with-preview",
+            "link": "#image-upload-with-preview",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Icon Picker",
+            "slug": "icon-picker",
+            "link": "#icon-picker",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Layouts",
+        "slug": "layouts",
+        "link": "#layouts",
+        "children": [
+          {
+            "level": 3,
+            "title": "Default (stack)",
+            "slug": "default-stack",
+            "link": "#default-stack",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Grid (1–4 columns responsive)",
+            "slug": "grid-1–4-columns-responsive",
+            "link": "#grid-1–4-columns-responsive",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Sections (custom)",
+            "slug": "sections-custom",
+            "link": "#sections-custom",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Create vs Edit",
+        "slug": "create-vs-edit",
+        "link": "#create-vs-edit",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Validation and Errors",
+        "slug": "validation-and-errors",
+        "link": "#validation-and-errors",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Submission Handling",
+        "slug": "submission-handling",
+        "link": "#submission-handling",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Comprehensive Example",
+        "slug": "comprehensive-example",
+        "link": "#comprehensive-example",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Use Cases",
+        "slug": "use-cases",
+        "link": "#use-cases",
         "children": []
       },
       {
@@ -1759,7 +2051,7 @@ export const searchIndex = [
         "children": []
       }
     ],
-    "path": "/table-utils-docs.html",
+    "path": "/global-form-docs.html",
     "pathLocale": "/",
     "extraFields": []
   }

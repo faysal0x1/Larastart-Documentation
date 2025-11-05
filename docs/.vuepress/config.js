@@ -71,10 +71,16 @@ export default defineUserConfig({
               icon: 'mdi:chevron-down-box'
             },
             {
-              text: 'Datatable Buttons',
-              link: '/datatable-buttons-docs',
+              text: 'Table Utils',
+              link: '/table-utils-docs',
               icon: 'mdi:chevron-down-box'
             },
+
+            {
+              text: "Global Form",
+              link: '/global-form-docs',
+              icon: 'mdi:chevron-down-box'
+            }
 
           ],
         },
