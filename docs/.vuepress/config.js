@@ -43,8 +43,39 @@ export default defineUserConfig({
           collapsible: true,
           icon: 'mdi:widgets',
           children: [
-            { text: 'Actions Dropdown', link: '/actions-dropdown', icon: 'mdi:chevron-down-box' },
-            { text: 'Can Component', link: '/can-component-docs', icon: 'mdi:shield-check' },
+            {
+              text: 'Actions Dropdown',
+              link: '/actions-dropdown',
+              icon: 'mdi:chevron-down-box'
+            },
+            {
+              text: 'Can Component',
+              link: '/can-component-docs',
+              icon: 'mdi:shield-check'
+            },
+            {
+              text: 'Utility Helper',
+              link: '/utility-helpers-docs',
+              icon: 'mdi:shield-check'
+            },
+          ],
+        },
+        {
+          text: 'Data Tables',
+          collapsible: true,
+          icon: 'mdi:widgets',
+          children: [
+            {
+              text: 'Datatable Buttons',
+              link: '/datatable-buttons-docs',
+              icon: 'mdi:chevron-down-box'
+            },
+            {
+              text: 'Datatable Buttons',
+              link: '/datatable-buttons-docs',
+              icon: 'mdi:chevron-down-box'
+            },
+
           ],
         },
         { text: 'Contact', link: '/contact', icon: 'mdi:email' },

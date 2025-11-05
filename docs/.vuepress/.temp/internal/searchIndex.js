@@ -552,6 +552,404 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "DataTable Extra Buttons",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Overview",
+        "slug": "overview",
+        "link": "#overview",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Components",
+        "slug": "components",
+        "link": "#components",
+        "children": [
+          {
+            "level": 3,
+            "title": "DataTableExtraButtons",
+            "slug": "datatableextrabuttons",
+            "link": "#datatableextrabuttons",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Individual Components",
+            "slug": "individual-components",
+            "link": "#individual-components",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Basic Usage",
+        "slug": "basic-usage",
+        "link": "#basic-usage",
+        "children": [
+          {
+            "level": 3,
+            "title": "Complete Setup",
+            "slug": "complete-setup",
+            "link": "#complete-setup",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "DataTableExtraButtons",
+        "slug": "datatableextrabuttons-1",
+        "link": "#datatableextrabuttons-1",
+        "children": [
+          {
+            "level": 3,
+            "title": "Props",
+            "slug": "props",
+            "link": "#props",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Feature Configuration",
+            "slug": "feature-configuration",
+            "link": "#feature-configuration",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Examples",
+            "slug": "examples",
+            "link": "#examples",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "ImportButton",
+        "slug": "importbutton",
+        "link": "#importbutton",
+        "children": [
+          {
+            "level": 3,
+            "title": "Props",
+            "slug": "props-1",
+            "link": "#props-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Callback Data",
+            "slug": "callback-data",
+            "link": "#callback-data",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Supported File Formats",
+            "slug": "supported-file-formats",
+            "link": "#supported-file-formats",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Examples",
+            "slug": "examples-1",
+            "link": "#examples-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Features",
+            "slug": "features",
+            "link": "#features",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Backend Implementation",
+            "slug": "backend-implementation",
+            "link": "#backend-implementation",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "ExportButton",
+        "slug": "exportbutton",
+        "link": "#exportbutton",
+        "children": [
+          {
+            "level": 3,
+            "title": "Props",
+            "slug": "props-2",
+            "link": "#props-2",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Examples",
+            "slug": "examples-2",
+            "link": "#examples-2",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Backend Implementation",
+            "slug": "backend-implementation-1",
+            "link": "#backend-implementation-1",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "ExportSelectedButton",
+        "slug": "exportselectedbutton",
+        "link": "#exportselectedbutton",
+        "children": [
+          {
+            "level": 3,
+            "title": "Props",
+            "slug": "props-3",
+            "link": "#props-3",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Examples",
+            "slug": "examples-3",
+            "link": "#examples-3",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Features",
+            "slug": "features-1",
+            "link": "#features-1",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Backend Implementation",
+            "slug": "backend-implementation-2",
+            "link": "#backend-implementation-2",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "DeleteSelectedButton",
+        "slug": "deleteselectedbutton",
+        "link": "#deleteselectedbutton",
+        "children": [
+          {
+            "level": 3,
+            "title": "Props",
+            "slug": "props-4",
+            "link": "#props-4",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Examples",
+            "slug": "examples-4",
+            "link": "#examples-4",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Features",
+            "slug": "features-2",
+            "link": "#features-2",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Confirmation Dialog",
+            "slug": "confirmation-dialog",
+            "link": "#confirmation-dialog",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Backend Implementation",
+            "slug": "backend-implementation-3",
+            "link": "#backend-implementation-3",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Permissions",
+        "slug": "permissions",
+        "link": "#permissions",
+        "children": [
+          {
+            "level": 3,
+            "title": "Required Permissions",
+            "slug": "required-permissions",
+            "link": "#required-permissions",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Current Limitation",
+            "slug": "current-limitation",
+            "link": "#current-limitation",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Customizing Permissions",
+            "slug": "customizing-permissions",
+            "link": "#customizing-permissions",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Complete Integration Example",
+        "slug": "complete-integration-example",
+        "link": "#complete-integration-example",
+        "children": [
+          {
+            "level": 3,
+            "title": "React Component",
+            "slug": "react-component",
+            "link": "#react-component",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Laravel Routes",
+            "slug": "laravel-routes",
+            "link": "#laravel-routes",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Laravel Controller",
+            "slug": "laravel-controller",
+            "link": "#laravel-controller",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Styling",
+        "slug": "styling",
+        "link": "#styling",
+        "children": [
+          {
+            "level": 3,
+            "title": "Dark Mode",
+            "slug": "dark-mode",
+            "link": "#dark-mode",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Custom Styling",
+            "slug": "custom-styling",
+            "link": "#custom-styling",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Best Practices",
+        "slug": "best-practices",
+        "link": "#best-practices",
+        "children": [
+          {
+            "level": 3,
+            "title": "✅ Do's",
+            "slug": "✅-do-s",
+            "link": "#✅-do-s",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "❌ Don'ts",
+            "slug": "❌-don-ts",
+            "link": "#❌-don-ts",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Troubleshooting",
+        "slug": "troubleshooting",
+        "link": "#troubleshooting",
+        "children": [
+          {
+            "level": 3,
+            "title": "Import Not Working",
+            "slug": "import-not-working",
+            "link": "#import-not-working",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Export Returns Empty File",
+            "slug": "export-returns-empty-file",
+            "link": "#export-returns-empty-file",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Delete Not Working",
+            "slug": "delete-not-working",
+            "link": "#delete-not-working",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Buttons Not Showing",
+            "slug": "buttons-not-showing",
+            "link": "#buttons-not-showing",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Related Documentation",
+        "slug": "related-documentation",
+        "link": "#related-documentation",
+        "children": []
+      }
+    ],
+    "path": "/datatable-buttons-docs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Get Started",
     "headers": [
       {
@@ -811,9 +1209,557 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "Utility Helper Functions",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Overview",
+        "slug": "overview",
+        "link": "#overview",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Import",
+        "slug": "import",
+        "link": "#import",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Question Type Helpers",
+        "slug": "question-type-helpers",
+        "link": "#question-type-helpers",
+        "children": [
+          {
+            "level": 3,
+            "title": "getTypeLabel()",
+            "slug": "gettypelabel",
+            "link": "#gettypelabel",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "getQuestionTypeIcon()",
+            "slug": "getquestiontypeicon",
+            "link": "#getquestiontypeicon",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "formatQuestionType()",
+            "slug": "formatquestiontype",
+            "link": "#formatquestiontype",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Difficulty Helpers",
+        "slug": "difficulty-helpers",
+        "link": "#difficulty-helpers",
+        "children": [
+          {
+            "level": 3,
+            "title": "getDifficultyColor()",
+            "slug": "getdifficultycolor",
+            "link": "#getdifficultycolor",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "getDifficultyVariant()",
+            "slug": "getdifficultyvariant",
+            "link": "#getdifficultyvariant",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Date & Time Helpers",
+        "slug": "date-time-helpers",
+        "link": "#date-time-helpers",
+        "children": [
+          {
+            "level": 3,
+            "title": "formatTime()",
+            "slug": "formattime",
+            "link": "#formattime",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "formatDate()",
+            "slug": "formatdate",
+            "link": "#formatdate",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "formateTimeByDate()",
+            "slug": "formatetimebydate",
+            "link": "#formatetimebydate",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "formatDateTime()",
+            "slug": "formatdatetime",
+            "link": "#formatdatetime",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "formatDateTimeLocal()",
+            "slug": "formatdatetimelocal",
+            "link": "#formatdatetimelocal",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Number Helpers",
+        "slug": "number-helpers",
+        "link": "#number-helpers",
+        "children": [
+          {
+            "level": 3,
+            "title": "formatNumber()",
+            "slug": "formatnumber",
+            "link": "#formatnumber",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Code Generation",
+        "slug": "code-generation",
+        "link": "#code-generation",
+        "children": [
+          {
+            "level": 3,
+            "title": "generateRandomCode()",
+            "slug": "generaterandomcode",
+            "link": "#generaterandomcode",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Status Badge Helpers",
+        "slug": "status-badge-helpers",
+        "link": "#status-badge-helpers",
+        "children": [
+          {
+            "level": 3,
+            "title": "getQuizStatusBadge()",
+            "slug": "getquizstatusbadge",
+            "link": "#getquizstatusbadge",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "getStatusBadge()",
+            "slug": "getstatusbadge",
+            "link": "#getstatusbadge",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "getTimerColor()",
+            "slug": "gettimercolor",
+            "link": "#gettimercolor",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Color Utilities",
+        "slug": "color-utilities",
+        "link": "#color-utilities",
+        "children": [
+          {
+            "level": 3,
+            "title": "connectionColors()",
+            "slug": "connectioncolors",
+            "link": "#connectioncolors",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "hashString()",
+            "slug": "hashstring",
+            "link": "#hashstring",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "getMatchingConnectionColor()",
+            "slug": "getmatchingconnectioncolor",
+            "link": "#getmatchingconnectioncolor",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Avatar Helpers",
+        "slug": "avatar-helpers",
+        "link": "#avatar-helpers",
+        "children": [
+          {
+            "level": 3,
+            "title": "getAvatarUrl()",
+            "slug": "getavatarurl",
+            "link": "#getavatarurl",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "getAvatarNumber()",
+            "slug": "getavatarnumber",
+            "link": "#getavatarnumber",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Text Helpers",
+        "slug": "text-helpers",
+        "link": "#text-helpers",
+        "children": [
+          {
+            "level": 3,
+            "title": "firstWords()",
+            "slug": "firstwords",
+            "link": "#firstwords",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Answer Rendering",
+        "slug": "answer-rendering",
+        "link": "#answer-rendering",
+        "children": [
+          {
+            "level": 3,
+            "title": "renderAnswer()",
+            "slug": "renderanswer",
+            "link": "#renderanswer",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Data Utilities",
+        "slug": "data-utilities",
+        "link": "#data-utilities",
+        "children": [
+          {
+            "level": 3,
+            "title": "getUniqueByEmail()",
+            "slug": "getuniquebyemail",
+            "link": "#getuniquebyemail",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Complete Integration Examples",
+        "slug": "complete-integration-examples",
+        "link": "#complete-integration-examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "Question Type Display",
+            "slug": "question-type-display",
+            "link": "#question-type-display",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Quiz Timer Component",
+            "slug": "quiz-timer-component",
+            "link": "#quiz-timer-component",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Quiz Results Display",
+            "slug": "quiz-results-display",
+            "link": "#quiz-results-display",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Matching Question Display",
+            "slug": "matching-question-display",
+            "link": "#matching-question-display",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "User Avatar Component",
+            "slug": "user-avatar-component",
+            "link": "#user-avatar-component",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "TypeScript Support",
+        "slug": "typescript-support",
+        "link": "#typescript-support",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Best Practices",
+        "slug": "best-practices",
+        "link": "#best-practices",
+        "children": [
+          {
+            "level": 3,
+            "title": "✅ Do's",
+            "slug": "✅-do-s",
+            "link": "#✅-do-s",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "❌ Don'ts",
+            "slug": "❌-don-ts",
+            "link": "#❌-don-ts",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Browser Compatibility",
+        "slug": "browser-compatibility",
+        "link": "#browser-compatibility",
+        "children": []
+      }
+    ],
+    "path": "/utility-helpers-docs.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "",
     "headers": [],
     "path": "/404.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Table Utilities (tableUtils.jsx)",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Features",
+        "slug": "features",
+        "link": "#features",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Installation",
+        "slug": "installation",
+        "link": "#installation",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Quick Start",
+        "slug": "quick-start",
+        "link": "#quick-start",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Exports Overview",
+        "slug": "exports-overview",
+        "link": "#exports-overview",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API Details and Examples",
+        "slug": "api-details-and-examples",
+        "link": "#api-details-and-examples",
+        "children": [
+          {
+            "level": 3,
+            "title": "createColumn",
+            "slug": "createcolumn",
+            "link": "#createcolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createActionsColumn",
+            "slug": "createactionscolumn",
+            "link": "#createactionscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createDateColumn",
+            "slug": "createdatecolumn",
+            "link": "#createdatecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createStatusColumn",
+            "slug": "createstatuscolumn",
+            "link": "#createstatuscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createDescriptionColumn",
+            "slug": "createdescriptioncolumn",
+            "link": "#createdescriptioncolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createTagsColumn",
+            "slug": "createtagscolumn",
+            "link": "#createtagscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createBooleanColumn",
+            "slug": "createbooleancolumn",
+            "link": "#createbooleancolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "withOriginal",
+            "slug": "withoriginal",
+            "link": "#withoriginal",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "column (shorthand)",
+            "slug": "column-shorthand",
+            "link": "#column-shorthand",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "RowActions (layout helper)",
+            "slug": "rowactions-layout-helper",
+            "link": "#rowactions-layout-helper",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createSerialColumn",
+            "slug": "createserialcolumn",
+            "link": "#createserialcolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "linkColumn and linkColumnPresets",
+            "slug": "linkcolumn-and-linkcolumnpresets",
+            "link": "#linkcolumn-and-linkcolumnpresets",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createToggleColumn",
+            "slug": "createtogglecolumn",
+            "link": "#createtogglecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createStatusToggleColumn",
+            "slug": "createstatustogglecolumn",
+            "link": "#createstatustogglecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createPermissionActionsColumn",
+            "slug": "createpermissionactionscolumn",
+            "link": "#createpermissionactionscolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createImageColumn",
+            "slug": "createimagecolumn",
+            "link": "#createimagecolumn",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "createSelectColumn",
+            "slug": "createselectcolumn",
+            "link": "#createselectcolumn",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Patterns and Tips",
+        "slug": "patterns-and-tips",
+        "link": "#patterns-and-tips",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Dependencies",
+        "slug": "dependencies",
+        "link": "#dependencies",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Browser Support",
+        "slug": "browser-support",
+        "link": "#browser-support",
+        "children": []
+      }
+    ],
+    "path": "/table-utils-docs.html",
     "pathLocale": "/",
     "extraFields": []
   }
