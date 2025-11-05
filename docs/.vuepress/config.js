@@ -2,6 +2,7 @@ import { hopeTheme } from 'vuepress-theme-hope'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { searchPlugin } from '@vuepress/plugin-search'
+import { defaultTheme } from '@vuepress/theme-default'
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -11,7 +12,7 @@ export default defineUserConfig({
   // Important for GitHub Pages project sites: ensures assets are served from /<REPO_NAME>/
   base: '/Larastart-Documentation/',
 
-  theme: hopeTheme({
+  theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
 
     navbar: [
@@ -35,7 +36,6 @@ export default defineUserConfig({
 
   plugins: [
     searchPlugin({
-      // basic local full-text search over all pages
       maxSuggestions: 10,
       locales: {
         '/': {
