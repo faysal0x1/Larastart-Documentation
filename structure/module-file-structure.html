@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en-US" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.26" />
+    <meta name="theme" content="VuePress Theme Hope 2.0.0-rc.98" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme="dark"] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem("vuepress-theme-hope-scheme");
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+      if (userMode === "dark" || (userMode !== "light" && systemDarkMode)) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    </script>
+    <title>Larastart</title><meta name="description" content="Larastart — Laravel starter kit with repository pattern and JSX components">
+    <link rel="preload" href="/Larastart-Documentation/assets/style-DcbM8lng.css" as="style"><link rel="stylesheet" href="/Larastart-Documentation/assets/style-DcbM8lng.css">
+    <link rel="modulepreload" href="/Larastart-Documentation/assets/app-Br9D58ru.js"><link rel="modulepreload" href="/Larastart-Documentation/assets/module-file-structure.html-CUkisMW5.js"><link rel="modulepreload" href="/Larastart-Documentation/assets/plugin-vue_export-helper-DlAUqK2U.js">
+    <link rel="prefetch" href="/Larastart-Documentation/assets/index.html-CvTCUyaY.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/about.html-VP5ZsoG9.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/contact.html-CfmsYXoI.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/contribute.html-DEV9ATBC.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/get-started.html-6IO5Ixst.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/laravel-helpers-docs.html-oA3Sajpd.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/project-overview.html-CrQ8-_Pf.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/actions-dropdown.html-nuV5doUl.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/can-component-docs.html-0veXKZst.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/utility-helpers-docs.html-DQZJCM2J.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/cart-module.html-9HUF0T7y.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/coupon-module.html-Du2tY0K3.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/health-monitor-module.html-DVEM5k1U.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/project-file-structure.html-BiEfHqih.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/data-table-docs.html-B_QDzdJR.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/datatable-buttons-docs.html-1gcW-KLx.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/global-form-docs.html-CLqs1wK5.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/listing-page-docs.html-D6C6C6Jh.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/table-utils-docs.html-Cc4cN_QY.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/AppSecurity-Combined.html-C9f2QsnD.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/AppTokenController.html-ERXLxwX6.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/VerifyAppJwt.html-B7R49wpF.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/VerifyAppSignature.html-CiG5QXoE.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/404.html-CcwILyoB.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/index.html-CK0Mw-Ou.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/index.html-Dbv1Amzv.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/index.html-CZ7LTORN.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/index.html-ByF-IwaZ.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/index.html-MUmei-Ie.js" as="script"><link rel="prefetch" href="/Larastart-Documentation/assets/photoswipe.esm-CKV1Bsxh.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><!--[--><!--[--><span tabindex="-1"></span><a href="#main-content" class="vp-skip-link sr-only">Skip to main content</a><!--]--><!--[--><div class="theme-container external-link-icon has-toc" vp-container><!--[--><header id="navbar" class="vp-navbar" vp-navbar><div class="vp-navbar-start"><button type="button" class="vp-toggle-sidebar-button" title="Toggle Sidebar"><span class="icon"></span></button><!--[--><a class="route-link vp-brand" href="/Larastart-Documentation/" aria-label="Take me home"><img class="vp-nav-logo" src="https://raw.githubusercontent.com/github/explore/main/topics/laravel/laravel.png" alt><!----><span class="vp-site-name hide-in-pad">Larastart</span></a><!--]--></div><div class="vp-navbar-center"><!--[--><nav class="vp-nav-links"><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/Larastart-Documentation/" aria-label="Home"><!--[--><iconify-icon class="vp-icon" icon="mdi:home" sizing="height" height="1em"></iconify-icon><!--]-->Home<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/Larastart-Documentation/get-started.html" aria-label="Get Started"><!--[--><iconify-icon class="vp-icon" icon="mdi:rocket-launch" sizing="height" height="1em"></iconify-icon><!--]-->Get Started<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/Larastart-Documentation/about.html" aria-label="About"><!--[--><iconify-icon class="vp-icon" icon="mdi:information-outline" sizing="height" height="1em"></iconify-icon><!--]-->About<!----></a></div><div class="vp-nav-item hide-in-mobile"><div class="vp-dropdown-wrapper"><button type="button" class="vp-dropdown-title" aria-label="Components"><!--[--><iconify-icon class="vp-icon" icon="mdi:widgets" sizing="height" height="1em"></iconify-icon>Components<!--]--><span class="arrow"></span><ul class="vp-dropdown"><li class="vp-dropdown-item"><a class="route-link auto-link" href="/Larastart-Documentation/actions-dropdown.html" aria-label="Actions Dropdown"><!--[--><iconify-icon class="vp-icon" icon="mdi:chevron-down-box" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Actions Dropdown<!----></a></li><li class="vp-dropdown-item"><a class="route-link auto-link" href="/Larastart-Documentation/can-component-docs.html" aria-label="Can Component"><!--[--><iconify-icon class="vp-icon" icon="mdi:shield-check" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Can Component<!----></a></li></ul></button></div></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/Larastart-Documentation/contact.html" aria-label="Contact"><!--[--><iconify-icon class="vp-icon" icon="mdi:email" sizing="height" height="1em"></iconify-icon><!--]-->Contact<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="route-link auto-link" href="/Larastart-Documentation/contribute.html" aria-label="Contribute"><!--[--><iconify-icon class="vp-icon" icon="mdi:account-heart-outline" sizing="height" height="1em"></iconify-icon><!--]-->Contribute<!----></a></div><div class="vp-nav-item hide-in-mobile"><a class="auto-link external-link" href="https://github.com/faysal0x1/larastart" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><!--[--><iconify-icon class="vp-icon" icon="mdi:github" sizing="height" height="1em"></iconify-icon><!--]-->GitHub<!----></a></div></nav><!--]--></div><div class="vp-navbar-end"><!--[--><!----><!----><div class="vp-nav-item hide-in-mobile"><button type="button" class="vp-color-mode-switch" id="color-mode-switch"><svg xmlns="http://www.w3.org/2000/svg" class="icon auto-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="auto icon" name="auto" style="display:block;"><path d="M512 992C246.92 992 32 777.08 32 512S246.92 32 512 32s480 214.92 480 480-214.92 480-480 480zm0-840c-198.78 0-360 161.22-360 360 0 198.84 161.22 360 360 360s360-161.16 360-360c0-198.78-161.22-360-360-360zm0 660V212c165.72 0 300 134.34 300 300 0 165.72-134.28 300-300 300z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon dark-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="dark icon" name="dark" style="display:none;"><path d="M524.8 938.667h-4.267a439.893 439.893 0 0 1-313.173-134.4 446.293 446.293 0 0 1-11.093-597.334A432.213 432.213 0 0 1 366.933 90.027a42.667 42.667 0 0 1 45.227 9.386 42.667 42.667 0 0 1 10.24 42.667 358.4 358.4 0 0 0 82.773 375.893 361.387 361.387 0 0 0 376.747 82.774 42.667 42.667 0 0 1 54.187 55.04 433.493 433.493 0 0 1-99.84 154.88 438.613 438.613 0 0 1-311.467 128z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon light-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="light icon" name="light" style="display:none;"><path d="M952 552h-80a40 40 0 0 1 0-80h80a40 40 0 0 1 0 80zM801.88 280.08a41 41 0 0 1-57.96-57.96l57.96-58a41.04 41.04 0 0 1 58 58l-58 57.96zM512 752a240 240 0 1 1 0-480 240 240 0 0 1 0 480zm0-560a40 40 0 0 1-40-40V72a40 40 0 0 1 80 0v80a40 40 0 0 1-40 40zm-289.88 88.08-58-57.96a41.04 41.04 0 0 1 58-58l57.96 58a41 41 0 0 1-57.96 57.96zM192 512a40 40 0 0 1-40 40H72a40 40 0 0 1 0-80h80a40 40 0 0 1 40 40zm30.12 231.92a41 41 0 0 1 57.96 57.96l-57.96 58a41.04 41.04 0 0 1-58-58l58-57.96zM512 832a40 40 0 0 1 40 40v80a40 40 0 0 1-80 0v-80a40 40 0 0 1 40-40zm289.88-88.08 58 57.96a41.04 41.04 0 0 1-58 58l-57.96-58a41 41 0 0 1 57.96-57.96z"></path></svg></button></div><form class="search-box" role="search"><input type="search" placeholder="Search docs" autocomplete="off" spellcheck="false" value><!----></form><!--]--><button type="button" class="vp-toggle-navbar-button" aria-label="Toggle Navbar" aria-expanded="false" aria-controls="nav-screen"><span><span class="vp-top"></span><span class="vp-middle"></span><span class="vp-bottom"></span></span></button></div></header><!----><!--]--><!----><div class="toggle-sidebar-wrapper"><span class="arrow start"></span></div><aside id="sidebar" class="vp-sidebar" vp-sidebar><!----><ul class="vp-sidebar-links"><li><a class="route-link auto-link vp-sidebar-link" href="/Larastart-Documentation/" aria-label="Home"><!--[--><iconify-icon class="vp-icon" icon="mdi:home-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Home<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/Larastart-Documentation/get-started.html" aria-label="Get Started"><!--[--><iconify-icon class="vp-icon" icon="mdi:rocket-launch-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Get Started<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/Larastart-Documentation/project-overview.html" aria-label="Project Overview"><!--[--><iconify-icon class="vp-icon" icon="mdi:rocket-launch-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Project Overview<!----></a></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><iconify-icon class="vp-icon" icon="mdi:rocket-launch-outline" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">HMac Security</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable active" type="button"><iconify-icon class="vp-icon" icon="mdi:folder-outline" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">File Structure</span><span class="vp-arrow down"></span></button><ul class="vp-sidebar-links"><li><a class="route-link auto-link vp-sidebar-link" href="/Larastart-Documentation/structure/project-file-structure.html" aria-label="Project File Structure"><!--[--><iconify-icon class="vp-icon" icon="mdi:folder-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Project File Structure<!----></a></li><li><a class="route-link route-link-active auto-link vp-sidebar-link active" href="/Larastart-Documentation/structure/module-file-structure.html" aria-label="Module File Structure"><!--[--><iconify-icon class="vp-icon" icon="mdi:folder-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Module File Structure<!----></a></li></ul></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><iconify-icon class="vp-icon" icon="mdi:folder-outline" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">Modules</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><iconify-icon class="vp-icon" icon="mdi:cube-outline" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">Components</span><span class="vp-arrow end"></span></button><!----></section></li><li><section class="vp-sidebar-group"><button class="vp-sidebar-header clickable" type="button"><iconify-icon class="vp-icon" icon="mdi:table-large" sizing="both" width="1em" height="1em"></iconify-icon><span class="vp-sidebar-title">Data Tables</span><span class="vp-arrow end"></span></button><!----></section></li><li><a class="route-link auto-link vp-sidebar-link" href="/Larastart-Documentation/about.html" aria-label="About"><!--[--><iconify-icon class="vp-icon" icon="mdi:information-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->About<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/Larastart-Documentation/contact.html" aria-label="Contact"><!--[--><iconify-icon class="vp-icon" icon="mdi:email-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Contact<!----></a></li><li><a class="route-link auto-link vp-sidebar-link" href="/Larastart-Documentation/contribute.html" aria-label="Contribute"><!--[--><iconify-icon class="vp-icon" icon="mdi:hand-heart-outline" sizing="both" width="1em" height="1em"></iconify-icon><!--]-->Contribute<!----></a></li></ul><!----></aside><!--[--><main id="main-content" class="vp-page"><!--[--><!----><!----><nav class="vp-breadcrumb disable"></nav><div class="vp-page-title"><h1><!----></h1><div class="page-info"><!----><!----><span class="page-date-info" aria-label="Writing Date📅" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon calendar-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="calendar icon" name="calendar"><path d="M716.4 110.137c0-18.753-14.72-33.473-33.472-33.473-18.753 0-33.473 14.72-33.473 33.473v33.473h66.993v-33.473zm-334.87 0c0-18.753-14.72-33.473-33.473-33.473s-33.52 14.72-33.52 33.473v33.473h66.993v-33.473zm468.81 33.52H716.4v100.465c0 18.753-14.72 33.473-33.472 33.473a33.145 33.145 0 01-33.473-33.473V143.657H381.53v100.465c0 18.753-14.72 33.473-33.473 33.473a33.145 33.145 0 01-33.473-33.473V143.657H180.6A134.314 134.314 0 0046.66 277.595v535.756A134.314 134.314 0 00180.6 947.289h669.74a134.36 134.36 0 00133.94-133.938V277.595a134.314 134.314 0 00-133.94-133.938zm33.473 267.877H147.126a33.145 33.145 0 01-33.473-33.473c0-18.752 14.72-33.473 33.473-33.473h736.687c18.752 0 33.472 14.72 33.472 33.473a33.145 33.145 0 01-33.472 33.473z"></path></svg><span data-allow-mismatch="text">11/5/25</span><meta property="datePublished" content="2025-11-05T11:51:58.000Z"></span><!----><span class="page-reading-time-info" aria-label="Reading Time⌛" data-balloon-pos="up"><svg xmlns="http://www.w3.org/2000/svg" class="icon timer-icon" viewBox="0 0 1024 1024" fill="currentColor" aria-label="timer icon" name="timer"><path d="M799.387 122.15c4.402-2.978 7.38-7.897 7.38-13.463v-1.165c0-8.933-7.38-16.312-16.312-16.312H256.33c-8.933 0-16.311 7.38-16.311 16.312v1.165c0 5.825 2.977 10.874 7.637 13.592 4.143 194.44 97.22 354.963 220.201 392.763-122.204 37.542-214.893 196.511-220.2 389.397-4.661 5.049-7.638 11.651-7.638 19.03v5.825h566.49v-5.825c0-7.379-2.849-13.981-7.509-18.9-5.049-193.016-97.867-351.985-220.2-389.527 123.24-37.67 216.446-198.453 220.588-392.892zM531.16 450.445v352.632c117.674 1.553 211.787 40.778 211.787 88.676H304.097c0-48.286 95.149-87.382 213.728-88.676V450.445c-93.077-3.107-167.901-81.297-167.901-177.093 0-8.803 6.99-15.793 15.793-15.793 8.803 0 15.794 6.99 15.794 15.793 0 80.261 63.69 145.635 142.01 145.635s142.011-65.374 142.011-145.635c0-8.803 6.99-15.793 15.794-15.793s15.793 6.99 15.793 15.793c0 95.019-73.789 172.82-165.96 177.093z"></path></svg><span>Less than 1 minute</span><meta property="timeRequired" content="PT1M"></span><!----><!----></div><hr></div><!----><div class="" vp-content><!----><div id="markdown-content"><div class="language- line-numbers-mode" data-highlighter="shiki" data-ext="" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34;"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code class="language-"><span class="line"><span>├── 📁 Cart</span></span>
+<span class="line"><span>│   ├── 📁 Facades</span></span>
+<span class="line"><span>│   │   └── 🐘 CartModule.php</span></span>
+<span class="line"><span>│   ├── 📁 Http</span></span>
+<span class="line"><span>│   │   ├── 📁 Controllers</span></span>
+<span class="line"><span>│   │   │   └── 🐘 CartController.php</span></span>
+<span class="line"><span>│   │   └── 📁 Middleware</span></span>
+<span class="line"><span>│   │       ├── 🐘 CartSessionMiddleware.php</span></span>
+<span class="line"><span>│   │       └── 🐘 EnsureCartSession.php</span></span>
+<span class="line"><span>│   ├── 📁 Models</span></span>
+<span class="line"><span>│   │   ├── 🐘 Cart.php</span></span>
+<span class="line"><span>│   │   └── 🐘 CartItem.php</span></span>
+<span class="line"><span>│   ├── 📁 Providers</span></span>
+<span class="line"><span>│   │   └── 🐘 CartModuleServiceProvider.php</span></span>
+<span class="line"><span>│   ├── 📁 Services</span></span>
+<span class="line"><span>│   │   └── 🐘 CartService.php</span></span>
+<span class="line"><span>│   ├── 📁 database</span></span>
+<span class="line"><span>│   │   └── 📁 migrations</span></span>
+<span class="line"><span>│   │       ├── 🐘 2025_09_14_184047_create_carts_table.php</span></span>
+<span class="line"><span>│   │       └── 🐘 2025_09_14_184055_create_cart_items_table.php</span></span>
+<span class="line"><span>│   └── 📁 routes</span></span>
+<span class="line"><span>│       └── 🐘 api.php</span></span>
+<span class="line"><span>├── 📁 Contracts</span></span>
+<span class="line"><span>│   └── 🐘 ModuleInterface.php</span></span>
+<span class="line"><span>├── 📁 Coupon</span></span>
+<span class="line"><span>│   ├── 📁 Facades</span></span>
+<span class="line"><span>│   │   └── 🐘 Coupon.php</span></span>
+<span class="line"><span>│   ├── 📁 Http</span></span>
+<span class="line"><span>│   │   └── 📁 Controllers</span></span>
+<span class="line"><span>│   │       └── 🐘 CouponController.php</span></span>
+<span class="line"><span>│   ├── 📁 Models</span></span>
+<span class="line"><span>│   │   ├── 🐘 Coupon.php</span></span>
+<span class="line"><span>│   │   └── 🐘 CouponUser.php</span></span>
+<span class="line"><span>│   ├── 📁 Providers</span></span>
+<span class="line"><span>│   │   └── 🐘 CouponModuleServiceProvider.php</span></span>
+<span class="line"><span>│   ├── 📁 Services</span></span>
+<span class="line"><span>│   │   └── 🐘 CouponService.php</span></span>
+<span class="line"><span>│   ├── 📁 database</span></span>
+<span class="line"><span>│   │   └── 📁 migrations</span></span>
+<span class="line"><span>│   │       ├── 🐘 2025_09_16_000010_create_coupons_table.php</span></span>
+<span class="line"><span>│   │       └── 🐘 2025_09_16_000011_create_coupon_users_table.php</span></span>
+<span class="line"><span>│   └── 📁 routes</span></span>
+<span class="line"><span>│       └── 🐘 api.php</span></span>
+<span class="line"><span>├── 📁 HealthMonitor</span></span>
+<span class="line"><span>│   ├── 📁 Console</span></span>
+<span class="line"><span>│   │   └── 📁 Commands</span></span>
+<span class="line"><span>│   │       ├── 🐘 HealthMonitorCleanupCommand.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 HealthMonitorConfigCommand.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 HealthMonitorInstallCommand.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 HealthMonitorStatusCommand.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 HealthMonitorTelegramTestCommand.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 HealthMonitorTestErrorCommand.php</span></span>
+<span class="line"><span>│   │       └── 🐘 HealthMonitorTestNotificationCommand.php</span></span>
+<span class="line"><span>│   ├── 📁 Database</span></span>
+<span class="line"><span>│   │   ├── 📁 Migrations</span></span>
+<span class="line"><span>│   │   │   ├── 🐘 2025_01_15_000001_create_health_checks_table.php</span></span>
+<span class="line"><span>│   │   │   ├── 🐘 2025_01_15_000002_create_health_alerts_table.php</span></span>
+<span class="line"><span>│   │   │   └── 🐘 2025_01_15_000003_create_health_metrics_table.php</span></span>
+<span class="line"><span>│   │   └── 📁 Seeders</span></span>
+<span class="line"><span>│   │       └── 🐘 HealthMonitorSeeder.php</span></span>
+<span class="line"><span>│   ├── 📁 Facades</span></span>
+<span class="line"><span>│   │   └── 🐘 HealthMonitor.php</span></span>
+<span class="line"><span>│   ├── 📁 Http</span></span>
+<span class="line"><span>│   │   ├── 📁 Controllers</span></span>
+<span class="line"><span>│   │   │   ├── 📁 Api</span></span>
+<span class="line"><span>│   │   │   │   └── 🐘 HealthMonitorApiController.php</span></span>
+<span class="line"><span>│   │   │   └── 🐘 HealthMonitorController.php</span></span>
+<span class="line"><span>│   │   └── 📁 Middleware</span></span>
+<span class="line"><span>│   │       └── 🐘 ErrorMonitoringMiddleware.php</span></span>
+<span class="line"><span>│   ├── 📁 Models</span></span>
+<span class="line"><span>│   │   ├── 🐘 HealthAlert.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 HealthCheck.php</span></span>
+<span class="line"><span>│   │   └── 🐘 HealthMetric.php</span></span>
+<span class="line"><span>│   ├── 📁 Providers</span></span>
+<span class="line"><span>│   │   └── 🐘 HealthMonitorServiceProvider.php</span></span>
+<span class="line"><span>│   ├── 📁 Resources</span></span>
+<span class="line"><span>│   │   └── 📁 views</span></span>
+<span class="line"><span>│   │       └── 🐘 dashboard.blade.php</span></span>
+<span class="line"><span>│   ├── 📁 Routes</span></span>
+<span class="line"><span>│   │   ├── 🐘 api.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 test.php</span></span>
+<span class="line"><span>│   │   └── 🐘 web.php</span></span>
+<span class="line"><span>│   ├── 📁 Services</span></span>
+<span class="line"><span>│   │   ├── 🐘 DiscordNotificationService.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 HealthCheckService.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 HealthMonitorService.php</span></span>
+<span class="line"><span>│   │   └── 🐘 TelegramNotificationService.php</span></span>
+<span class="line"><span>│   ├── 📁 config</span></span>
+<span class="line"><span>│   │   └── 🐘 healthmonitor.php</span></span>
+<span class="line"><span>│   ├── 📝 README.md</span></span>
+<span class="line"><span>│   ├── ⚙️ composer.json</span></span>
+<span class="line"><span>│   ├── 🐘 helpers.php</span></span>
+<span class="line"><span>│   └── 📄 install.sh</span></span>
+<span class="line"><span>├── 📁 MyModule</span></span>
+<span class="line"><span>│   ├── 📁 Facades</span></span>
+<span class="line"><span>│   ├── 📁 Http</span></span>
+<span class="line"><span>│   │   └── 📁 Controllers</span></span>
+<span class="line"><span>│   ├── 📁 Models</span></span>
+<span class="line"><span>│   ├── 📁 Providers</span></span>
+<span class="line"><span>│   ├── 📁 Resources</span></span>
+<span class="line"><span>│   │   └── 📁 views</span></span>
+<span class="line"><span>│   ├── 📁 Services</span></span>
+<span class="line"><span>│   ├── 📁 database</span></span>
+<span class="line"><span>│   │   └── 📁 migrations</span></span>
+<span class="line"><span>│   └── 📁 routes</span></span>
+<span class="line"><span>├── 📁 Notification</span></span>
+<span class="line"><span>│   ├── 📁 Facades</span></span>
+<span class="line"><span>│   ├── 📁 Http</span></span>
+<span class="line"><span>│   │   └── 📁 Controllers</span></span>
+<span class="line"><span>│   ├── 📁 Models</span></span>
+<span class="line"><span>│   ├── 📁 Providers</span></span>
+<span class="line"><span>│   ├── 📁 Resources</span></span>
+<span class="line"><span>│   │   └── 📁 views</span></span>
+<span class="line"><span>│   ├── 📁 Services</span></span>
+<span class="line"><span>│   ├── 📁 database</span></span>
+<span class="line"><span>│   │   └── 📁 migrations</span></span>
+<span class="line"><span>│   └── 📁 routes</span></span>
+<span class="line"><span>├── 📁 PaymentGateway</span></span>
+<span class="line"><span>│   ├── 📁 Facades</span></span>
+<span class="line"><span>│   │   └── 🐘 PaymentGateway.php</span></span>
+<span class="line"><span>│   ├── 📁 Http</span></span>
+<span class="line"><span>│   │   └── 📁 Controllers</span></span>
+<span class="line"><span>│   │       ├── 📁 Api</span></span>
+<span class="line"><span>│   │       │   └── 🐘 PaymentController.php</span></span>
+<span class="line"><span>│   │       ├── 📁 Web</span></span>
+<span class="line"><span>│   │       │   └── 🐘 PaymentWebhookController.php</span></span>
+<span class="line"><span>│   │       └── 🐘 SSLCommerzController.php</span></span>
+<span class="line"><span>│   ├── 📁 Models</span></span>
+<span class="line"><span>│   │   ├── 🐘 Payment.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 PaymentLog.php</span></span>
+<span class="line"><span>│   │   └── 🐘 PaymentTransaction.php</span></span>
+<span class="line"><span>│   ├── 📁 Providers</span></span>
+<span class="line"><span>│   │   └── 🐘 PaymentGatewayModuleServiceProvider.php</span></span>
+<span class="line"><span>│   ├── 📁 Services</span></span>
+<span class="line"><span>│   │   └── 📁 SSLCommerz</span></span>
+<span class="line"><span>│   │       └── 🐘 SSLCommerzService.php</span></span>
+<span class="line"><span>│   ├── 📁 config</span></span>
+<span class="line"><span>│   │   └── 🐘 payment_gateways.php</span></span>
+<span class="line"><span>│   ├── 📁 database</span></span>
+<span class="line"><span>│   │   └── 📁 migrations</span></span>
+<span class="line"><span>│   │       ├── 🐘 2025_09_14_190531_update_orders_table_for_payment_integration.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 2025_09_14_190534_create_payments_table.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 2025_09_14_190535_create_payment_transactions_table.php</span></span>
+<span class="line"><span>│   │       ├── 🐘 2025_09_15_000001_create_payment_logs_table.php</span></span>
+<span class="line"><span>│   │       └── 🐘 2025_09_15_091051_update_payments_table_add_core_columns.php</span></span>
+<span class="line"><span>│   └── 📁 routes</span></span>
+<span class="line"><span>│       └── 🐘 api.php</span></span>
+<span class="line"><span>├── 📁 SuperCache</span></span>
+<span class="line"><span>│   ├── 📁 Console</span></span>
+<span class="line"><span>│   │   └── 📁 Commands</span></span>
+<span class="line"><span>│   │       ├── 🐘 SuperCacheInstallCommand.php</span></span>
+<span class="line"><span>│   │       └── 🐘 SuperCacheStatusCommand.php</span></span>
+<span class="line"><span>│   ├── 📁 Contracts</span></span>
+<span class="line"><span>│   │   └── 🐘 SuperCacheInterface.php</span></span>
+<span class="line"><span>│   ├── 📁 Database</span></span>
+<span class="line"><span>│   │   ├── 📁 Factories</span></span>
+<span class="line"><span>│   │   │   └── 🐘 CacheSettingFactory.php</span></span>
+<span class="line"><span>│   │   ├── 📁 Migrations</span></span>
+<span class="line"><span>│   │   │   └── 🐘 2025_10_08_090134_create_cache_settings_table.php</span></span>
+<span class="line"><span>│   │   └── 📁 Seeders</span></span>
+<span class="line"><span>│   │       └── 🐘 CacheSettingsSeeder.php</span></span>
+<span class="line"><span>│   ├── 📁 Facades</span></span>
+<span class="line"><span>│   │   ├── 🐘 PerformanceCache.php</span></span>
+<span class="line"><span>│   │   └── 🐘 SimpleCache.php</span></span>
+<span class="line"><span>│   ├── 📁 Http</span></span>
+<span class="line"><span>│   │   └── 📁 Controllers</span></span>
+<span class="line"><span>│   │       ├── 📁 Api</span></span>
+<span class="line"><span>│   │       │   └── 🐘 CacheSettingsApiController.php</span></span>
+<span class="line"><span>│   │       └── 🐘 CacheSettingsController.php</span></span>
+<span class="line"><span>│   ├── 📁 Models</span></span>
+<span class="line"><span>│   │   └── 🐘 CacheSetting.php</span></span>
+<span class="line"><span>│   ├── 📁 Observers</span></span>
+<span class="line"><span>│   │   ├── 🐘 QuizCacheObserver.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 QuizCategoryCacheObserver.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 SubjectCacheObserver.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 TagCacheObserver.php</span></span>
+<span class="line"><span>│   │   └── 🐘 TeamCacheObserver.php</span></span>
+<span class="line"><span>│   ├── 📁 Providers</span></span>
+<span class="line"><span>│   │   └── 🐘 SuperCacheServiceProvider.php</span></span>
+<span class="line"><span>│   ├── 📁 Resources</span></span>
+<span class="line"><span>│   │   └── 📁 views</span></span>
+<span class="line"><span>│   │       └── 📁 admin</span></span>
+<span class="line"><span>│   │           └── 📁 cache-settings</span></span>
+<span class="line"><span>│   │               └── 🐘 index.blade.php</span></span>
+<span class="line"><span>│   ├── 📁 Routes</span></span>
+<span class="line"><span>│   │   ├── 🐘 api.php</span></span>
+<span class="line"><span>│   │   └── 🐘 web.php</span></span>
+<span class="line"><span>│   ├── 📁 Services</span></span>
+<span class="line"><span>│   │   ├── 🐘 CacheSettingsService.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 KeyBuilder.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 PerformanceCacheDomainService.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 PerformanceCacheManager.php</span></span>
+<span class="line"><span>│   │   ├── 🐘 SimpleCacheManager.php</span></span>
+<span class="line"><span>│   │   └── 🐘 SuperCacheService.php</span></span>
+<span class="line"><span>│   ├── 📁 config</span></span>
+<span class="line"><span>│   │   └── 🐘 supercache.php</span></span>
+<span class="line"><span>│   ├── 📝 README.md</span></span>
+<span class="line"><span>│   ├── 📝 SIMPLE_CACHE_GUIDE.md</span></span>
+<span class="line"><span>│   ├── 📄 artisan</span></span>
+<span class="line"><span>│   ├── ⚙️ composer.json</span></span>
+<span class="line"><span>│   ├── 🐘 helpers.php</span></span>
+<span class="line"><span>│   └── 🐘 update_controllers.php</span></span>
+<span class="line"><span>├── 🐘 ModuleManager.php</span></span>
+<span class="line"><span>└── 🐘 ModulesServiceProvider.php</span></span></code></pre><div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0;"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div><!----><!----><!----></div><footer class="vp-page-meta"><!----><div class="vp-meta-item git-info"><div class="update-time"><span class="vp-meta-label">Last Updated: </span><time class="vp-meta-info" datetime="2025-11-08T10:07:42.000Z" data-allow-mismatch>11/8/25, 10:07 AM</time></div><div class="contributors"><span class="vp-meta-label">Contributors: </span><!--[--><!--[--><span class="vp-meta-info" title="email: faysal35-3119@diu.edu.bd">faysal0x1</span><!--]--><!--]--></div></div></footer><nav class="vp-page-nav"><a class="route-link auto-link prev" href="/Larastart-Documentation/structure/project-file-structure.html" aria-label="Project File Structure"><div class="hint"><span class="arrow start"></span>Prev</div><div class="link"><iconify-icon class="vp-icon" icon="mdi:folder-outline" sizing="height" height="1em"></iconify-icon>Project File Structure</div></a><!----></nav><!----><!----><!--]--></main><!--]--><!----></div><!--]--><!--]--><!--[--><!----><!--[--><!--]--><!--]--><!--]--></div>
+    <script type="module" src="/Larastart-Documentation/assets/app-Br9D58ru.js" defer></script>
+  </body>
+</html>
