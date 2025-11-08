@@ -53,12 +53,31 @@ export default defineUserConfig({
         { text: 'Get Started', link: '/get-started', icon: 'mdi:rocket-launch-outline' },
         { text: 'Project Overview', link: '/project-overview', icon: 'mdi:rocket-launch-outline' },
         {
+          text: "HMac Security",
+          collapsible: true,
+          icon: 'mdi:rocket-launch-outline',
+          children: [
+            { text: 'AppSecurity-Combined.md', link: '/hmac/AppSecurity-Combined.md', icon: 'mdi:rocket-launch-outline' },
+            { text: 'AppTokenController.md', link: '/hmac/AppTokenController.md', icon: 'mdi:rocket-launch-outline' },
+            {
+              text: 'VerifyAppSignature.md',
+              link: '/hmac/VerifyAppSignature.md',
+              icon: 'mdi:rocket-launch-outline'
+            },
+            {
+              text: 'VerifyAppJwt.md',
+              link: '/hmac/VerifyAppJwt.md',
+              icon: 'mdi:rocket-launch-outline'
+            }
+          ],
+        },
+        {
           text: "File Structure",
           collapsible: true,
           icon: 'mdi:folder-outline',
           children: [
-            { text: 'Project File Structure', link: '/project-file-structure', icon: 'mdi:folder-outline' },
-            { text: "Module File Structure", link: "/module-file-structure", icon: "mdi:folder-outline" },
+            { text: 'Project File Structure', link: '/structure/project-file-structure', icon: 'mdi:folder-outline' },
+            { text: "Module File Structure", link: "/structure/module-file-structure", icon: "mdi:folder-outline" },
           ],
         },
         {
@@ -68,17 +87,17 @@ export default defineUserConfig({
           children: [
             {
               text: 'Cart Module',
-              link: '/cart-module',
+              link: '/modules/cart-module',
               icon: 'mdi:cart-outline'
             },
             {
               text: 'Health Monitor Module',
-              link: '/health-monitor-module',
+              link: '/modules/health-monitor-module',
               icon: 'mdi:cart-outline'
             },
             {
               text: "Coupon Module",
-              link: "/coupon-module",
+              link: "/modules/coupon-module",
               icon: "mdi:cart-outline"
             }
 
@@ -89,9 +108,9 @@ export default defineUserConfig({
           collapsible: true,
           icon: 'mdi:cube-outline',
           children: [
-            { text: 'Actions Dropdown', link: '/actions-dropdown', icon: 'mdi:menu-swap-outline' },
-            { text: 'Can Component', link: '/can-component-docs', icon: 'mdi:shield-check-outline' },
-            { text: 'Utility Helper', link: '/utility-helpers-docs', icon: 'mdi:tools' },
+            { text: 'Actions Dropdown', link: '/components/actions-dropdown', icon: 'mdi:menu-swap-outline' },
+            { text: 'Can Component', link: '/components/can-component-docs', icon: 'mdi:shield-check-outline' },
+            { text: 'Utility Helper', link: '/components/utility-helpers-docs', icon: 'mdi:tools' },
           ],
         },
 
@@ -100,11 +119,11 @@ export default defineUserConfig({
           collapsible: true,
           icon: 'mdi:table-large',
           children: [
-            { text: 'Data Tables', link: '/data-table-docs', icon: 'mdi:view-list-outline' },
-            { text: 'Datatable Buttons', link: '/datatable-buttons-docs', icon: 'mdi:table-arrow-down' },
-            { text: 'Table Utils', link: '/table-utils-docs', icon: 'mdi:table-cog' },
-            { text: 'Global Form', link: '/global-form-docs', icon: 'mdi:form-select' },
-            { text: 'Listing Page', link: '/listing-page-docs', icon: 'mdi:format-list-bulleted-square' },
+            { text: 'Data Tables', link: '/data-tables/data-table-docs', icon: 'mdi:view-list-outline' },
+            { text: 'Datatable Buttons', link: '/data-tables/datatable-buttons-docs', icon: 'mdi:table-arrow-down' },
+            { text: 'Table Utils', link: '/data-tables/table-utils-docs', icon: 'mdi:table-cog' },
+            { text: 'Global Form', link: '/data-tables/global-form-docs', icon: 'mdi:form-select' },
+            { text: 'Listing Page', link: '/data-tables/listing-page-docs', icon: 'mdi:format-list-bulleted-square' },
           ],
         },
 
